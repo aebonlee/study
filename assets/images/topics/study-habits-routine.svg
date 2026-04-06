@@ -3,9 +3,6 @@
   <rect width="400" height="300" rx="12" fill="#F3F4F6"/>
 
   <!-- Subtle pattern -->
-  <pattern id="sr-grid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
-    <rect x="0" y="0" width="30" height="30" fill="none" stroke="#059669" stroke-width="0.3" opacity="0.08"/>
-  </pattern>
   <rect width="400" height="300" fill="url(#sr-grid)"/>
 
   <!-- Central clock -->
@@ -42,6 +39,9 @@
 
   <!-- Arrows connecting nodes (circular flow) -->
   <defs>
+    <pattern id="sr-grid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="30" height="30" fill="none" stroke="#059669" stroke-width="0.3" opacity="0.08"/>
+    </pattern>
     <marker id="sr-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
       <polygon points="0,0 8,3 0,6" fill="#059669"/>
     </marker>

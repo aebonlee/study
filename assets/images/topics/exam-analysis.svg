@@ -92,7 +92,7 @@
   <path d="M322 120 L298 148 A40 40 0 0 1 322 80 Z" fill="#FFF1F2" stroke="#FECDD3" stroke-width="0.5"/>
 
   <!-- Pie labels -->
-  <circle cx="275" y="0" r="0" fill="none"/>
+  <circle cx="275" cy="0" r="0" fill="none"/>
   <rect x="265" y="168" width="8" height="8" rx="1" fill="#E11D48"/>
   <text x="276" y="176" font-family="Arial, sans-serif" font-size="7" fill="#374151">Concept 40%</text>
   <rect x="330" y="168" width="8" height="8" rx="1" fill="#FB7185"/>

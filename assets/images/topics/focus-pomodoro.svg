@@ -3,9 +3,11 @@
   <rect width="400" height="300" rx="12" fill="#F3F4F6"/>
 
   <!-- Subtle pattern -->
-  <pattern id="dots-pom" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-    <circle cx="10" cy="10" r="0.7" fill="#E5E7EB"/>
-  </pattern>
+  <defs>
+    <pattern id="dots-pom" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.7" fill="#E5E7EB"/>
+    </pattern>
+  </defs>
   <rect width="400" height="300" fill="url(#dots-pom)" rx="12"/>
 
   <!-- Tomato timer (left side) -->

@@ -3,10 +3,12 @@
   <rect width="400" height="300" rx="12" fill="#F3F4F6"/>
 
   <!-- Subtle grid pattern -->
-  <pattern id="grid-cn" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
-    <rect width="16" height="16" fill="none"/>
-    <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#E5E7EB" stroke-width="0.3"/>
-  </pattern>
+  <defs>
+    <pattern id="grid-cn" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="none"/>
+      <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#E5E7EB" stroke-width="0.3"/>
+    </pattern>
+  </defs>
 
   <!-- Paper shadow -->
   <rect x="33" y="23" width="340" height="260" rx="4" fill="#D1D5DB" opacity="0.3"/>

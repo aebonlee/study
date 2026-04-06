@@ -3,9 +3,6 @@
   <rect width="400" height="300" rx="12" fill="#F3F4F6"/>
 
   <!-- Subtle pattern -->
-  <pattern id="dots-dig" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-    <circle cx="12" cy="12" r="0.8" fill="#E5E7EB"/>
-  </pattern>
   <rect width="400" height="300" fill="url(#dots-dig)" rx="12"/>
 
   <!-- Tablet device -->
@@ -141,6 +138,9 @@
 
   <!-- Arrow markers -->
   <defs>
+    <pattern id="dots-dig" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="#E5E7EB"/>
+    </pattern>
     <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563EB"/>
     </marker>
