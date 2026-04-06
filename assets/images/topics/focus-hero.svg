@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" rx="16" fill="#F3F4F6"/>
+
+  <!-- Subtle radial pattern -->
+  <radialGradient id="focus-radial" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#D97706" stop-opacity="0.03"/>
+    <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="800" height="400" fill="url(#focus-radial)" rx="16"/>
+
+  <!-- Outer ring (distraction zone) -->
+  <circle cx="400" cy="200" r="175" fill="none" stroke="#D97706" stroke-width="1" opacity="0.1" stroke-dasharray="8,4"/>
+  <circle cx="400" cy="200" r="155" fill="none" stroke="#D97706" stroke-width="1" opacity="0.15" stroke-dasharray="6,4"/>
+
+  <!-- Middle ring -->
+  <circle cx="400" cy="200" r="130" fill="#D97706" opacity="0.04"/>
+  <circle cx="400" cy="200" r="130" fill="none" stroke="#D97706" stroke-width="1.5" opacity="0.2"/>
+
+  <!-- Inner ring (focus zone) -->
+  <circle cx="400" cy="200" r="100" fill="#D97706" opacity="0.06"/>
+  <circle cx="400" cy="200" r="100" fill="none" stroke="#D97706" stroke-width="2" opacity="0.3"/>
+
+  <!-- Core focus zone -->
+  <circle cx="400" cy="200" r="65" fill="#D97706" opacity="0.08"/>
+  <circle cx="400" cy="200" r="65" fill="none" stroke="#D97706" stroke-width="2.5" opacity="0.4"/>
+
+  <!-- Person in meditation pose -->
+  <g transform="translate(400, 200)">
+    <!-- Head -->
+    <circle cx="0" cy="-35" r="14" fill="#D97706" opacity="0.8"/>
+    <!-- Body -->
+    <path d="M0 -21 Q0 -10 0 5" stroke="#D97706" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <!-- Arms in meditation -->
+    <path d="M0 -10 Q-15 -5 -28 8" stroke="#D97706" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M0 -10 Q15 -5 28 8" stroke="#D97706" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Legs crossed -->
+    <path d="M0 5 Q-10 15 -25 18" stroke="#D97706" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M0 5 Q10 15 25 18" stroke="#D97706" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Hands -->
+    <circle cx="-28" cy="10" r="4" fill="#D97706" opacity="0.6"/>
+    <circle cx="28" cy="10" r="4" fill="#D97706" opacity="0.6"/>
+
+    <!-- Focus glow -->
+    <circle cx="0" cy="-10" r="45" fill="none" stroke="#D97706" stroke-width="0.8" opacity="0.15"/>
+    <circle cx="0" cy="-10" r="38" fill="none" stroke="#D97706" stroke-width="0.5" opacity="0.1"/>
+  </g>
+
+  <!-- Deflected distractions with "blocked" effects -->
+
+  <!-- Phone notification (top-left) - being deflected -->
+  <g transform="translate(195, 75) rotate(15)">
+    <rect x="-18" y="-28" width="36" height="56" rx="6" fill="#EF4444" opacity="0.15" stroke="#EF4444" stroke-width="1" opacity="0.3"/>
+    <rect x="-14" y="-22" width="28" height="38" rx="2" fill="white" opacity="0.3"/>
+    <!-- Notification badge -->
+    <circle cx="10" cy="-18" r="6" fill="#EF4444" opacity="0.6"/>
+    <text x="10" y="-15" text-anchor="middle" fill="white" font-size="7" font-weight="bold">3</text>
+    <!-- Deflection lines -->
+    <line x1="22" y1="-10" x2="35" y2="-18" stroke="#EF4444" stroke-width="1.5" opacity="0.4"/>
+    <line x1="22" y1="0" x2="38" y2="-5" stroke="#EF4444" stroke-width="1.5" opacity="0.4"/>
+    <line x1="22" y1="10" x2="36" y2="8" stroke="#EF4444" stroke-width="1.5" opacity="0.4"/>
+  </g>
+  <!-- Block shield -->
+  <g transform="translate(240, 112)">
+    <circle cx="0" cy="0" r="12" fill="#D97706" opacity="0.15"/>
+    <path d="M-5 0 L0 -7 L5 0 L0 7 Z" fill="#D97706" opacity="0.4"/>
+  </g>
+
+  <!-- Social media icon (top-right) - being deflected -->
+  <g transform="translate(590, 65)">
+    <!-- Chat bubble -->
+    <path d="M-15 -15 Q-15 -25 0 -25 Q15 -25 15 -15 Q15 -5 0 -5 L-5 5 L-3 -5 Q-15 -5 -15 -15Z" fill="#8B5CF6" opacity="0.25" stroke="#8B5CF6" stroke-width="1" opacity="0.3"/>
+    <!-- Heart inside -->
+    <path d="M-4 -17 Q-4 -21 0 -18 Q4 -21 4 -17 Q4 -13 0 -11 Q-4 -13 -4 -17Z" fill="#8B5CF6" opacity="0.4"/>
+    <!-- Deflection lines -->
+    <line x1="-20" y1="-8" x2="-32" y2="-15" stroke="#8B5CF6" stroke-width="1.5" opacity="0.3"/>
+    <line x1="-18" y1="2" x2="-35" y2="5" stroke="#8B5CF6" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  <!-- Block shield -->
+  <g transform="translate(552, 100)">
+    <circle cx="0" cy="0" r="12" fill="#D97706" opacity="0.15"/>
+    <path d="M-5 0 L0 -7 L5 0 L0 7 Z" fill="#D97706" opacity="0.4"/>
+  </g>
+
+  <!-- Email icon (right) - being deflected -->
+  <g transform="translate(620, 210)">
+    <rect x="-18" y="-12" width="36" height="24" rx="4" fill="#3B82F6" opacity="0.15" stroke="#3B82F6" stroke-width="1" opacity="0.3"/>
+    <path d="M-16 -10 L0 2 L16 -10" stroke="#3B82F6" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <!-- Badge -->
+    <circle cx="14" cy="-10" r="5" fill="#EF4444" opacity="0.5"/>
+    <text x="14" y="-7" text-anchor="middle" fill="white" font-size="6" font-weight="bold">!</text>
+    <!-- Deflection -->
+    <line x1="-24" y1="-5" x2="-38" y2="-10" stroke="#3B82F6" stroke-width="1.5" opacity="0.3"/>
+    <line x1="-24" y1="5" x2="-40" y2="8" stroke="#3B82F6" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  <!-- Block shield -->
+  <g transform="translate(568, 205)">
+    <circle cx="0" cy="0" r="12" fill="#D97706" opacity="0.15"/>
+    <path d="M-5 0 L0 -7 L5 0 L0 7 Z" fill="#D97706" opacity="0.4"/>
+  </g>
+
+  <!-- Music/noise (bottom-right) -->
+  <g transform="translate(580, 320)">
+    <circle cx="0" cy="0" r="15" fill="#10B981" opacity="0.1" stroke="#10B981" stroke-width="1" opacity="0.2"/>
+    <!-- Music note -->
+    <path d="M-3 -5 L-3 -12 L5 -14 L5 -7" stroke="#10B981" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <circle cx="-5" cy="-4" r="3" fill="#10B981" opacity="0.3"/>
+    <circle cx="3" cy="-6" r="3" fill="#10B981" opacity="0.3"/>
+    <!-- Deflection -->
+    <line x1="-20" y1="-8" x2="-30" y2="-18" stroke="#10B981" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  <!-- Block shield -->
+  <g transform="translate(542, 295)">
+    <circle cx="0" cy="0" r="10" fill="#D97706" opacity="0.15"/>
+    <path d="M-4 0 L0 -6 L4 0 L0 6 Z" fill="#D97706" opacity="0.4"/>
+  </g>
+
+  <!-- News/feed (bottom-left) -->
+  <g transform="translate(195, 320)">
+    <rect x="-16" y="-16" width="32" height="32" rx="4" fill="#F59E0B" opacity="0.1" stroke="#F59E0B" stroke-width="1" opacity="0.2"/>
+    <!-- RSS-like icon -->
+    <circle cx="-8" cy="8" r="3" fill="#F59E0B" opacity="0.4"/>
+    <path d="M-8 -2 Q2 -2 2 8" stroke="#F59E0B" stroke-width="1.5" fill="none" opacity="0.3"/>
+    <path d="M-8 -8 Q8 -8 8 8" stroke="#F59E0B" stroke-width="1.5" fill="none" opacity="0.25"/>
+    <!-- Deflection -->
+    <line x1="20" y1="-5" x2="32" y2="-15" stroke="#F59E0B" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  <!-- Block shield -->
+  <g transform="translate(248, 298)">
+    <circle cx="0" cy="0" r="10" fill="#D97706" opacity="0.15"/>
+    <path d="M-4 0 L0 -6 L4 0 L0 6 Z" fill="#D97706" opacity="0.4"/>
+  </g>
+
+  <!-- Game controller (left) -->
+  <g transform="translate(170, 210)">
+    <rect x="-20" y="-12" width="40" height="24" rx="12" fill="#EC4899" opacity="0.1" stroke="#EC4899" stroke-width="1" opacity="0.2"/>
+    <!-- D-pad -->
+    <rect x="-12" y="-4" width="8" height="2" rx="1" fill="#EC4899" opacity="0.3"/>
+    <rect x="-9" y="-7" width="2" height="8" rx="1" fill="#EC4899" opacity="0.3"/>
+    <!-- Buttons -->
+    <circle cx="8" cy="-3" r="2" fill="#EC4899" opacity="0.3"/>
+    <circle cx="12" cy="1" r="2" fill="#EC4899" opacity="0.3"/>
+    <!-- Deflection -->
+    <line x1="24" y1="-5" x2="36" y2="-10" stroke="#EC4899" stroke-width="1.5" opacity="0.3"/>
+    <line x1="24" y1="5" x2="38" y2="8" stroke="#EC4899" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  <!-- Block shield -->
+  <g transform="translate(237, 200)">
+    <circle cx="0" cy="0" r="12" fill="#D97706" opacity="0.15"/>
+    <path d="M-5 0 L0 -7 L5 0 L0 7 Z" fill="#D97706" opacity="0.4"/>
+  </g>
+
+  <!-- Focus zone labels -->
+  <text x="400" y="330" text-anchor="middle" fill="#D97706" font-size="11" font-weight="bold" font-family="Arial, sans-serif" opacity="0.6">FOCUS ZONE</text>
+
+  <!-- Concentration waves emanating from person -->
+  <circle cx="400" cy="200" r="50" fill="none" stroke="#D97706" stroke-width="0.5" opacity="0.2">
+    <animate attributeName="r" from="50" to="65" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="0.2" to="0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="200" r="50" fill="none" stroke="#D97706" stroke-width="0.5" opacity="0.2">
+    <animate attributeName="r" from="50" to="65" dur="3s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="0.2" to="0" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="200" r="50" fill="none" stroke="#D97706" stroke-width="0.5" opacity="0.2">
+    <animate attributeName="r" from="50" to="65" dur="3s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="0.2" to="0" dur="3s" begin="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Decorative elements in corners -->
+  <!-- Top left -->
+  <circle cx="60" cy="45" r="3" fill="#D97706" opacity="0.15"/>
+  <circle cx="40" cy="65" r="2" fill="#D97706" opacity="0.1"/>
+  <circle cx="80" cy="30" r="2" fill="#D97706" opacity="0.1"/>
+
+  <!-- Top right -->
+  <circle cx="740" cy="45" r="3" fill="#D97706" opacity="0.15"/>
+  <circle cx="760" cy="65" r="2" fill="#D97706" opacity="0.1"/>
+
+  <!-- Bottom left -->
+  <circle cx="60" cy="365" r="3" fill="#D97706" opacity="0.15"/>
+  <circle cx="40" cy="345" r="2" fill="#D97706" opacity="0.1"/>
+
+  <!-- Bottom right -->
+  <circle cx="740" cy="365" r="3" fill="#D97706" opacity="0.15"/>
+  <circle cx="760" cy="345" r="2" fill="#D97706" opacity="0.1"/>
+
+  <!-- Small "X" marks on deflected items -->
+  <g transform="translate(198, 42)" opacity="0.3">
+    <line x1="-4" y1="-4" x2="4" y2="4" stroke="#EF4444" stroke-width="1.5"/>
+    <line x1="4" y1="-4" x2="-4" y2="4" stroke="#EF4444" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(625, 42)" opacity="0.3">
+    <line x1="-4" y1="-4" x2="4" y2="4" stroke="#8B5CF6" stroke-width="1.5"/>
+    <line x1="4" y1="-4" x2="-4" y2="4" stroke="#8B5CF6" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(655, 195)" opacity="0.3">
+    <line x1="-3" y1="-3" x2="3" y2="3" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="3" y1="-3" x2="-3" y2="3" stroke="#3B82F6" stroke-width="1.5"/>
+  </g>
+
+  <!-- Checkmark in center showing focused state -->
+  <g transform="translate(400, 240)">
+    <circle cx="0" cy="0" r="10" fill="#D97706" opacity="0.2"/>
+    <path d="M-5 0 L-1 4 L6 -4" stroke="#D97706" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
