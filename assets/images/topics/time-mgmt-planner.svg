@@ -1,94 +1,135 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
-  <rect width="400" height="300" rx="12" fill="#F3F4F6"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ECFEFF"/>
+      <stop offset="100%" stop-color="#CFFAFE"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#bg)"/>
 
   <!-- Title -->
-  <text x="200" y="26" text-anchor="middle" fill="#334155" font-size="14" font-family="system-ui" font-weight="700">Paper vs Digital Planner</text>
+  <text x="200" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#155E75">Paper vs Digital Planner</text>
 
-  <!-- VS badge -->
-  <circle cx="200" cy="148" r="20" fill="#0891B2"/>
-  <text x="200" y="153" text-anchor="middle" fill="white" font-size="14" font-family="system-ui" font-weight="800">VS</text>
+  <!-- VS circle -->
+  <circle cx="200" cy="145" r="22" fill="#0891B2" opacity="0.15"/>
+  <circle cx="200" cy="145" r="16" fill="#0891B2"/>
+  <text x="200" y="150" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="800" fill="white">VS</text>
 
   <!-- LEFT: Paper Planner -->
-  <!-- Notebook body -->
-  <rect x="30" y="50" width="130" height="175" rx="6" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
-  <!-- Spiral binding -->
-  <circle cx="35" cy="70" r="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
-  <circle cx="35" cy="90" r="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
-  <circle cx="35" cy="110" r="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
-  <circle cx="35" cy="130" r="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
-  <circle cx="35" cy="150" r="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
-  <circle cx="35" cy="170" r="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
-  <circle cx="35" cy="190" r="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
-  <circle cx="35" cy="210" r="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+  <g transform="translate(25,42)">
+    <!-- Notebook shadow -->
+    <rect x="5" y="5" width="140" height="185" rx="8" fill="#0891B2" opacity="0.08"/>
+    <!-- Notebook body -->
+    <rect x="0" y="0" width="140" height="185" rx="8" fill="white" stroke="#67E8F9" stroke-width="1.5"/>
+    <!-- Header band -->
+    <rect x="0" y="0" width="140" height="28" rx="8" fill="#0891B2" opacity="0.1"/>
+    <rect x="0" y="20" width="140" height="8" fill="#0891B2" opacity="0.1"/>
+    <text x="70" y="18" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#0E7490">Weekly Plan</text>
 
-  <!-- Handwritten schedule lines -->
-  <text x="55" y="72" fill="#065F73" font-size="9" font-family="system-ui" font-weight="600">Mon</text>
-  <line x1="55" y1="80" x2="145" y2="80" stroke="#CBD5E1" stroke-width="0.5"/>
-  <path d="M75,77 Q80,72 85,78 Q90,82 95,76" stroke="#334155" stroke-width="1" fill="none" stroke-linecap="round"/>
-  <text x="55" y="100" fill="#065F73" font-size="9" font-family="system-ui" font-weight="600">Tue</text>
-  <line x1="55" y1="108" x2="145" y2="108" stroke="#CBD5E1" stroke-width="0.5"/>
-  <path d="M75,105 Q82,100 90,106 Q98,110 105,103" stroke="#334155" stroke-width="1" fill="none" stroke-linecap="round"/>
-  <text x="55" y="128" fill="#065F73" font-size="9" font-family="system-ui" font-weight="600">Wed</text>
-  <line x1="55" y1="136" x2="145" y2="136" stroke="#CBD5E1" stroke-width="0.5"/>
-  <path d="M75,133 Q83,128 92,134" stroke="#334155" stroke-width="1" fill="none" stroke-linecap="round"/>
-  <text x="55" y="156" fill="#065F73" font-size="9" font-family="system-ui" font-weight="600">Thu</text>
-  <line x1="55" y1="164" x2="145" y2="164" stroke="#CBD5E1" stroke-width="0.5"/>
-  <path d="M75,161 Q85,155 95,162 Q100,165 110,159" stroke="#334155" stroke-width="1" fill="none" stroke-linecap="round"/>
+    <!-- Spiral binding -->
+    <g fill="none" stroke="#0891B2" stroke-width="1.2" opacity="0.5">
+      <ellipse cx="8" cy="45" rx="5" ry="4"/>
+      <ellipse cx="8" cy="65" rx="5" ry="4"/>
+      <ellipse cx="8" cy="85" rx="5" ry="4"/>
+      <ellipse cx="8" cy="105" rx="5" ry="4"/>
+      <ellipse cx="8" cy="125" rx="5" ry="4"/>
+      <ellipse cx="8" cy="145" rx="5" ry="4"/>
+      <ellipse cx="8" cy="165" rx="5" ry="4"/>
+    </g>
 
-  <!-- Colored sticky tabs on right edge -->
-  <rect x="148" y="55" width="12" height="20" rx="2" fill="#F59E0B" opacity="0.8"/>
-  <rect x="148" y="95" width="12" height="20" rx="2" fill="#10B981" opacity="0.8"/>
-  <rect x="148" y="135" width="12" height="20" rx="2" fill="#EF4444" opacity="0.8"/>
-  <rect x="148" y="175" width="12" height="20" rx="2" fill="#8B5CF6" opacity="0.8"/>
+    <!-- Day rows with handwritten style -->
+    <text x="22" y="48" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#0891B2">Mon</text>
+    <path d="M45,45 Q55,40 65,46 Q75,50 85,44" stroke="#374151" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <line x1="20" y1="54" x2="130" y2="54" stroke="#E0F2FE" stroke-width="0.5"/>
 
-  <!-- Pen -->
-  <g transform="translate(110,195) rotate(-30)">
-    <rect x="0" y="0" width="55" height="6" rx="1" fill="#0891B2"/>
-    <polygon points="0,0 -8,3 0,6" fill="#334155"/>
-    <rect x="45" y="0" width="10" height="6" rx="1" fill="#065F73"/>
+    <text x="22" y="68" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#0891B2">Tue</text>
+    <path d="M45,65 Q58,60 70,66 Q80,70 95,63" stroke="#374151" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <line x1="20" y1="74" x2="130" y2="74" stroke="#E0F2FE" stroke-width="0.5"/>
+
+    <text x="22" y="88" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#0891B2">Wed</text>
+    <path d="M45,85 Q52,80 60,86 Q70,90 82,84" stroke="#374151" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <line x1="20" y1="94" x2="130" y2="94" stroke="#E0F2FE" stroke-width="0.5"/>
+
+    <text x="22" y="108" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#0891B2">Thu</text>
+    <path d="M45,105 Q60,99 72,106 Q82,110 92,104" stroke="#374151" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <line x1="20" y1="114" x2="130" y2="114" stroke="#E0F2FE" stroke-width="0.5"/>
+
+    <text x="22" y="128" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#0891B2">Fri</text>
+    <path d="M45,125 Q55,120 68,126" stroke="#374151" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <line x1="20" y1="134" x2="130" y2="134" stroke="#E0F2FE" stroke-width="0.5"/>
+
+    <!-- Checkbox style -->
+    <rect x="115" y="42" width="10" height="10" rx="2" fill="none" stroke="#0891B2" stroke-width="1" opacity="0.5"/>
+    <polyline points="117,47 119,50 124,44" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="115" y="62" width="10" height="10" rx="2" fill="none" stroke="#0891B2" stroke-width="1" opacity="0.5"/>
+    <polyline points="117,67 119,70 124,64" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="115" y="82" width="10" height="10" rx="2" fill="none" stroke="#0891B2" stroke-width="1" opacity="0.5"/>
+
+    <!-- Sticky tabs -->
+    <rect x="128" y="38" width="14" height="22" rx="2" fill="#F59E0B" opacity="0.7"/>
+    <rect x="128" y="78" width="14" height="22" rx="2" fill="#10B981" opacity="0.7"/>
+    <rect x="128" y="118" width="14" height="22" rx="2" fill="#E11D48" opacity="0.6"/>
+
+    <!-- Pen -->
+    <g transform="translate(95,148) rotate(-25)">
+      <rect x="0" y="0" width="42" height="5" rx="1.5" fill="#0891B2"/>
+      <polygon points="0,0 -6,2.5 0,5" fill="#155E75"/>
+      <rect x="36" y="0" width="6" height="5" rx="1" fill="#155E75" opacity="0.5"/>
+    </g>
   </g>
 
-  <!-- Pros under paper -->
-  <text x="95" y="243" text-anchor="middle" fill="#065F73" font-size="8" font-family="system-ui" font-weight="600">+ Memory retention</text>
-  <text x="95" y="255" text-anchor="middle" fill="#065F73" font-size="8" font-family="system-ui" font-weight="600">+ No distractions</text>
-  <text x="95" y="267" text-anchor="middle" fill="#065F73" font-size="8" font-family="system-ui" font-weight="600">+ Flexible format</text>
-
   <!-- RIGHT: Digital Planner -->
-  <!-- Smartphone body -->
-  <rect x="240" y="50" width="130" height="175" rx="14" fill="#1E293B"/>
-  <rect x="246" y="62" width="118" height="150" rx="4" fill="white"/>
-  <!-- Notch -->
-  <rect x="280" y="52" width="50" height="6" rx="3" fill="#334155"/>
+  <g transform="translate(235,42)">
+    <!-- Phone shadow -->
+    <rect x="5" y="5" width="135" height="185" rx="18" fill="#0891B2" opacity="0.08"/>
+    <!-- Phone body -->
+    <rect x="0" y="0" width="135" height="185" rx="18" fill="#1E293B"/>
+    <!-- Screen -->
+    <rect x="6" y="14" width="123" height="155" rx="4" fill="white"/>
+    <!-- Notch -->
+    <rect x="42" y="3" width="50" height="7" rx="3.5" fill="#334155"/>
 
-  <!-- Calendar header -->
-  <rect x="246" y="62" width="118" height="22" rx="4" fill="#0891B2"/>
-  <text x="305" y="77" text-anchor="middle" fill="white" font-size="9" font-family="system-ui" font-weight="600">April 2026</text>
+    <!-- Calendar header -->
+    <rect x="6" y="14" width="123" height="24" rx="4" fill="#0891B2"/>
+    <rect x="6" y="30" width="123" height="8" fill="#0891B2"/>
+    <text x="67" y="30" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="white">April 2026</text>
 
-  <!-- Time blocks -->
-  <rect x="252" y="90" width="106" height="16" rx="3" fill="#0891B2" opacity="0.8"/>
-  <text x="258" y="101" fill="white" font-size="7" font-family="system-ui">9:00  Study - Math</text>
+    <!-- Time blocks -->
+    <rect x="12" y="45" width="111" height="18" rx="4" fill="#0891B2" opacity="0.85"/>
+    <text x="18" y="57" font-family="system-ui,sans-serif" font-size="7" font-weight="500" fill="white">9:00  Math Study</text>
+    <circle cx="112" cy="54" r="5" fill="white" opacity="0.3"/>
+    <text x="112" y="57" text-anchor="middle" font-family="system-ui,sans-serif" font-size="6" fill="white">!</text>
 
-  <rect x="252" y="110" width="106" height="16" rx="3" fill="#10B981" opacity="0.7"/>
-  <text x="258" y="121" fill="white" font-size="7" font-family="system-ui">11:00  Exercise</text>
+    <rect x="12" y="67" width="111" height="18" rx="4" fill="#10B981" opacity="0.75"/>
+    <text x="18" y="79" font-family="system-ui,sans-serif" font-size="7" font-weight="500" fill="white">11:00  Exercise</text>
 
-  <rect x="252" y="130" width="106" height="12" rx="3" fill="#94A3B8" opacity="0.5"/>
-  <text x="258" y="139" fill="white" font-size="7" font-family="system-ui">12:00  Lunch</text>
+    <rect x="12" y="89" width="111" height="14" rx="4" fill="#94A3B8" opacity="0.4"/>
+    <text x="18" y="99" font-family="system-ui,sans-serif" font-size="7" font-weight="500" fill="#64748B">12:00  Lunch Break</text>
 
-  <rect x="252" y="146" width="106" height="16" rx="3" fill="#8B5CF6" opacity="0.7"/>
-  <text x="258" y="157" fill="white" font-size="7" font-family="system-ui">1:00  Study - CS</text>
+    <rect x="12" y="107" width="111" height="18" rx="4" fill="#8B5CF6" opacity="0.75"/>
+    <text x="18" y="119" font-family="system-ui,sans-serif" font-size="7" font-weight="500" fill="white">1:00  CS Study</text>
 
-  <rect x="252" y="166" width="106" height="16" rx="3" fill="#F59E0B" opacity="0.7"/>
-  <text x="258" y="177" fill="white" font-size="7" font-family="system-ui">3:00  Review</text>
+    <rect x="12" y="129" width="111" height="18" rx="4" fill="#F59E0B" opacity="0.75"/>
+    <text x="18" y="141" font-family="system-ui,sans-serif" font-size="7" font-weight="500" fill="white">3:00  Review</text>
 
-  <rect x="252" y="186" width="106" height="16" rx="3" fill="#0891B2" opacity="0.4"/>
-  <text x="258" y="197" fill="#334155" font-size="7" font-family="system-ui">5:00  Free Time</text>
+    <rect x="12" y="151" width="111" height="14" rx="4" fill="#0891B2" opacity="0.3"/>
+    <text x="18" y="161" font-family="system-ui,sans-serif" font-size="7" font-weight="500" fill="#475569">5:00  Free Time</text>
 
-  <!-- Pros under digital -->
-  <text x="305" y="243" text-anchor="middle" fill="#065F73" font-size="8" font-family="system-ui" font-weight="600">+ Reminders & alerts</text>
-  <text x="305" y="255" text-anchor="middle" fill="#065F73" font-size="8" font-family="system-ui" font-weight="600">+ Easy recurring events</text>
-  <text x="305" y="267" text-anchor="middle" fill="#065F73" font-size="8" font-family="system-ui" font-weight="600">+ Search & sync</text>
+    <!-- Home bar -->
+    <rect x="45" y="175" width="44" height="4" rx="2" fill="#475569"/>
+  </g>
 
-  <!-- Label -->
-  <text x="95" y="285" text-anchor="middle" fill="#94A3B8" font-size="9" font-family="system-ui" font-weight="600">Paper Planner</text>
-  <text x="305" y="285" text-anchor="middle" fill="#94A3B8" font-size="9" font-family="system-ui" font-weight="600">Digital Planner</text>
+  <!-- Pros labels -->
+  <g font-family="system-ui,sans-serif" font-size="8.5" fill="#155E75">
+    <text x="95" y="245" text-anchor="middle" font-weight="600">+ Memory retention</text>
+    <text x="95" y="258" text-anchor="middle">+ No distractions</text>
+    <text x="95" y="271" text-anchor="middle">+ Creative freedom</text>
+    <text x="305" y="245" text-anchor="middle" font-weight="600">+ Reminders &amp; alerts</text>
+    <text x="305" y="258" text-anchor="middle">+ Search &amp; sync</text>
+    <text x="305" y="271" text-anchor="middle">+ Easy recurring</text>
+  </g>
+
+  <!-- Bottom labels -->
+  <text x="95" y="288" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#0E7490" opacity="0.6">Paper Planner</text>
+  <text x="305" y="288" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#0E7490" opacity="0.6">Digital Planner</text>
 </svg>
