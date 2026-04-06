@@ -26,6 +26,7 @@ function UnderstandingSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '집중력(Attention)은 수많은 자극 중에서 특정 대상에 인지 자원을 선택적으로 할당하는 능력입니다. 신경과학적으로 집중은 전두엽의 실행 기능이 관여하는 고차원적 인지 과정입니다. 집중력은 타고난 재능이 아니라 훈련을 통해 향상할 수 있는 기술이며, 이를 이해하는 것이 향상의 첫 걸음입니다.'
           : 'Focus (Attention) is the ability to selectively allocate cognitive resources to a specific target among countless stimuli. Neuroscientifically, focus is a higher-order cognitive process involving the executive functions of the prefrontal cortex. Focus is not an innate talent but a skill improvable through training, and understanding this is the first step toward improvement.'}
       </p>
+      <img src="/assets/images/topics/focus-understanding.svg" alt={isKo ? '주의력 3가지 유형' : 'Three Types of Attention'} className="guide-section-illustration" />
 
       <h3>{isKo ? '집중력의 세 가지 유형' : 'Three Types of Attention'}</h3>
       <ol>
@@ -184,6 +185,7 @@ function DistractionSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '집중을 방해하는 요소는 크게 외부적 방해와 내부적 방해로 나뉩니다. 외부적 방해는 소음, 알림, 동료의 말걸기 등 물리적 환경에서 오는 것이고, 내부적 방해는 걱정, 잡념, 감정적 동요 등 마음에서 발생하는 것입니다. 효과적인 집중을 위해서는 두 가지 모두를 관리해야 합니다.'
           : 'Distractions fall into two broad categories: external and internal. External distractions come from the physical environment — noise, notifications, colleagues interrupting. Internal distractions arise from the mind — worries, random thoughts, emotional fluctuations. Effective focus requires managing both.'}
       </p>
+      <img src="/assets/images/topics/focus-distraction.svg" alt={isKo ? '방해 요소 차단' : 'Blocking Distractions'} className="guide-section-illustration" />
 
       <h3>{isKo ? '디지털 방해 차단 전략' : 'Digital Distraction Blocking Strategies'}</h3>
       <ol>
@@ -291,6 +293,7 @@ function FlowSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '몰입(Flow)은 심리학자 Mihaly Csikszentmihalyi가 명명한 최적 경험 상태입니다. 활동에 완전히 흡수되어 시간 감각을 잃고, 자아의식이 사라지며, 행위 자체에서 깊은 만족을 느끼는 상태입니다. 몰입 상태에서는 뇌가 노르에피네프린, 도파민, 엔도르핀, 아난다마이드, 세로토닌의 5가지 신경화학물질을 동시에 분비하여 최고 수준의 성과가 발현됩니다.'
           : 'Flow is the optimal experience state named by psychologist Mihaly Csikszentmihalyi. It is a state of being completely absorbed in an activity, losing sense of time, where self-consciousness disappears and deep satisfaction comes from the activity itself. During flow, the brain simultaneously releases five neurochemicals — norepinephrine, dopamine, endorphins, anandamide, and serotonin — producing peak performance.'}
       </p>
+      <img src="/assets/images/topics/focus-flow.svg" alt={isKo ? '몰입 채널 다이어그램' : 'Flow Channel Diagram'} className="guide-section-illustration" />
 
       <h3>{isKo ? '몰입의 8가지 조건' : 'Eight Conditions for Flow'}</h3>
       <ol>

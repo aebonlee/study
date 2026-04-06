@@ -334,6 +334,7 @@ function PlannerSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '좋은 플래너는 단순한 일정 기록 도구가 아니라, 학습 목표를 시각화하고 실행력을 높여주는 전략적 도구입니다. 종이 플래너부터 디지털 앱까지, 자신에게 맞는 도구를 선택하고 효과적으로 활용하는 방법을 알아봅시다.'
             : 'A good planner is not just a schedule recorder but a strategic tool that visualizes learning goals and boosts execution. From paper planners to digital apps, let\'s explore how to choose the right tool and use it effectively.'}
         </p>
+        <img src="/assets/images/topics/time-mgmt-planner.svg" alt={isKo ? '종이 vs 디지털 플래너' : 'Paper vs Digital Planner'} className="guide-section-illustration" />
       </div>
 
       <h2>{isKo ? '플래너 유형과 선택 가이드' : 'Planner Types & Selection Guide'}</h2>
@@ -449,6 +450,7 @@ function ScheduleSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '언제, 얼마나, 어떤 순서로 공부할지를 체계적으로 설계하면 동일한 시간 투입으로도 훨씬 높은 학습 효과를 얻을 수 있습니다. 과학적으로 검증된 학습 스케줄링 기법들을 소개합니다.'
             : 'Systematically designing when, how long, and in what order to study yields far greater results with the same time investment. Here are scientifically validated study scheduling techniques.'}
         </p>
+        <img src="/assets/images/topics/time-mgmt-schedule.svg" alt={isKo ? '타임 블로킹 예시' : 'Time Blocking Example'} className="guide-section-illustration" />
       </div>
 
       <h2>{isKo ? '타임 블로킹 (Time Blocking)' : 'Time Blocking'}</h2>
@@ -531,6 +533,7 @@ function DeadlineSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '데드라인은 스트레스의 원인이 될 수도, 강력한 동기부여 도구가 될 수도 있습니다. 마감을 두려움의 대상이 아닌 생산성의 촉매로 활용하는 전략적 접근법을 배워봅시다.'
             : 'Deadlines can be a source of stress or a powerful motivator. Let\'s learn strategic approaches that turn deadlines from objects of fear into catalysts for productivity.'}
         </p>
+        <img src="/assets/images/topics/time-mgmt-deadline.svg" alt={isKo ? '역산 계획법' : 'Backward Planning'} className="guide-section-illustration" />
       </div>
 
       <h2>{isKo ? '역방향 계획법 (Backward Planning)' : 'Backward Planning'}</h2>

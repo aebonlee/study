@@ -148,6 +148,8 @@ export default function ExamStrategy(): ReactElement {
                     : 'Past exam questions are the most powerful weapon in exam preparation. Analyzing previous exams reveals exam trends, frequently tested topics, difficulty distribution, and question types. It is not simply about solving problems but about strategic analysis.'}
                 </p>
 
+                <img src="/assets/images/topics/exam-analysis.svg" alt={isKo ? '기출문제 분석' : 'Past Exam Analysis'} className="guide-section-illustration" />
+
                 <h3>{isKo ? '1. 기출문제 수집과 정리' : '1. Collecting & Organizing Past Exams'}</h3>
                 <p>
                   {isKo
@@ -265,6 +267,8 @@ export default function ExamStrategy(): ReactElement {
                     : 'Multiple choice questions are not simply about picking answers. With systematic strategies, you can solve certain questions quickly, improve odds on uncertain ones, and approach unknown questions logically. A 10-15% score improvement in multiple choice exams is achievable through strategy alone.'}
                 </p>
 
+                <img src="/assets/images/topics/exam-multiple.svg" alt={isKo ? '객관식 전략' : 'Multiple Choice Strategy'} className="guide-section-illustration" />
+
                 <h3>{isKo ? '1. 3단계 풀이법' : '1. Three-Pass Method'}</h3>
                 <p>
                   {isKo
@@ -381,6 +385,8 @@ export default function ExamStrategy(): ReactElement {
                     ? '시험 당일의 컨디션 관리와 전략적 접근은 최종 점수에 큰 영향을 미칩니다. 아무리 준비를 잘했어도 당일 실수하면 모든 노력이 물거품이 됩니다. 시험 전날부터 당일까지의 최적 루틴을 체계적으로 준비하세요.'
                     : 'Condition management and strategic approach on exam day significantly impact final scores. No matter how well you prepared, mistakes on the day can waste all your efforts. Systematically prepare the optimal routine from the day before to the exam itself.'}
                 </p>
+
+                <img src="/assets/images/topics/exam-dday.svg" alt={isKo ? 'D-day 준비 체크리스트' : 'D-day Preparation Checklist'} className="guide-section-illustration" />
 
                 <h3>{isKo ? '1. 전날 준비 체크리스트' : '1. Day-Before Preparation Checklist'}</h3>
                 <p>

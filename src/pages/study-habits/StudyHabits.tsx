@@ -406,6 +406,8 @@ function TrackingSection({ isKo }: { isKo: boolean }): ReactElement {
           : 'In behavioral psychology, there is a principle that "what gets measured gets managed." Tracking study habits yields three benefits. First, you gain objective awareness of your actual study time and patterns. Second, as a streak builds, the psychological desire not to break it reinforces motivation. Third, you can make data-driven decisions about which methods are most effective.'}
       </p>
 
+      <img src="/assets/images/topics/study-habits-tracking.svg" alt={isKo ? '습관 추적 대시보드' : 'Habit Tracking Dashboard'} className="guide-section-illustration" />
+
       <h3>{isKo ? '습관 추적 방법' : 'Habit Tracking Methods'}</h3>
       <ol>
         <li>
@@ -503,6 +505,8 @@ function ReviewSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '독일의 심리학자 헤르만 에빙하우스(Hermann Ebbinghaus)는 1885년 망각 곡선을 발견했습니다. 이에 따르면, 학습 후 20분이 지나면 약 42%를 잊고, 1시간 후에는 56%, 하루 후에는 67%, 한 달 후에는 79%를 잊게 됩니다. 그러나 적절한 시점에 복습을 하면, 망각 곡선의 기울기가 완만해지면서 기억 유지율이 크게 향상됩니다.'
           : 'German psychologist Hermann Ebbinghaus discovered the forgetting curve in 1885. According to it, after learning, we forget about 42% within 20 minutes, 56% after 1 hour, 67% after 1 day, and 79% after 1 month. However, by reviewing at appropriate intervals, the forgetting curve flattens and memory retention improves significantly.'}
       </p>
+
+      <img src="/assets/images/topics/study-habits-review.svg" alt={isKo ? '간격 반복 복습 곡선' : 'Spaced Review Curve'} className="guide-section-illustration" />
 
       <h3>{isKo ? '최적 복습 타이밍' : 'Optimal Review Timing'}</h3>
       <p>
@@ -611,6 +615,8 @@ function SustainSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '동기(motivation)만으로는 장기적인 습관을 유지할 수 없습니다. 동기는 감정에 기반하기 때문에 변동이 크고, 시간이 지나면 자연스럽게 감소합니다. 대신, "시스템"과 "환경 설계"에 의존하는 것이 핵심입니다. 동기가 떨어져도 자동으로 학습이 시작되는 시스템을 만들어야 합니다.'
           : 'Motivation alone cannot sustain long-term habits. Because motivation is emotion-based, it fluctuates greatly and naturally decreases over time. Instead, relying on "systems" and "environment design" is key. You need to build systems where studying starts automatically even when motivation is low.'}
       </p>
+
+      <img src="/assets/images/topics/study-habits-sustain.svg" alt={isKo ? '장기 성장 과정' : 'Long-term Growth Process'} className="guide-section-illustration" />
 
       <h3>{isKo ? '자기 결정 이론(Self-Determination Theory)' : 'Self-Determination Theory'}</h3>
       <p>

@@ -423,6 +423,8 @@ function ChunkingSection({ isKo }: { isKo: boolean }): ReactElement {
           : 'Chunking is a cognitive strategy that groups individual pieces of information into meaningful units (chunks) to increase working memory efficiency. Introduced by George Miller in his 1956 paper "The Magical Number Seven, Plus or Minus Two," it leverages the fact that working memory can only handle 7 (+/-2) items at a time, but there is no limit on the size of each item.'}
       </p>
 
+      <img src="/assets/images/topics/memory-chunking.svg" alt={isKo ? '청킹 기법 시각화' : 'Chunking Technique Visualization'} className="guide-section-illustration" />
+
       <h3>{isKo ? '일상 속 청킹 예시' : 'Everyday Chunking Examples'}</h3>
       <ul>
         <li>
@@ -518,6 +520,8 @@ function VisualizationSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '인간은 텍스트보다 이미지를 훨씬 잘 기억합니다. Allan Paivio의 이중 부호화 이론(Dual Coding Theory)에 따르면, 정보가 언어적(verbal)과 시각적(visual) 두 가지 경로로 동시에 인코딩될 때 기억 효과가 극대화됩니다. 연구에 따르면, 텍스트만 읽은 경우 72시간 후 기억률이 약 10%인 반면, 이미지와 함께 학습한 경우 65%까지 높아집니다.'
           : 'Humans remember images far better than text. According to Allan Paivio\'s Dual Coding Theory, memory is maximized when information is encoded through both verbal and visual channels simultaneously. Research shows that text-only reading yields about 10% retention after 72 hours, while learning with images increases retention to 65%.'}
       </p>
+
+      <img src="/assets/images/topics/memory-visualization.svg" alt={isKo ? '이중 부호화 이론' : 'Dual Coding Theory'} className="guide-section-illustration" />
 
       <h3>{isKo ? '마인드맵(Mind Map)' : 'Mind Maps'}</h3>
       <p>
@@ -625,6 +629,9 @@ function PracticeSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '노벨 물리학상 수상자 리처드 파인만(Richard Feynman)에서 영감을 받은 이 학습법은 "가르치면서 배우는" 원리를 활용합니다. 어떤 개념을 완전히 이해했는지 확인하는 가장 좋은 방법은 12살 어린이에게 설명할 수 있는지 테스트하는 것입니다.'
           : 'Inspired by Nobel Prize-winning physicist Richard Feynman, this learning method leverages the principle of "learning by teaching." The best way to verify whether you fully understand a concept is to test whether you can explain it to a 12-year-old.'}
       </p>
+
+      <img src="/assets/images/topics/memory-practice.svg" alt={isKo ? '파인만 기법 4단계' : 'Feynman Technique 4 Steps'} className="guide-section-illustration" />
+
       <ol>
         <li>
           <strong>{isKo ? '주제 선택' : 'Choose a Topic'}</strong> -{' '}

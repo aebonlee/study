@@ -154,6 +154,8 @@ export default function Reading(): ReactElement {
                     : 'Speed reading is the skill of increasing reading speed while maintaining comprehension. While average reading speed is 200-250 words per minute, skilled speed readers can read 600-1000 words per minute. Speed reading is not an innate talent but a skill anyone can acquire through systematic training.'}
                 </p>
 
+                <img src="/assets/images/topics/reading-speed.svg" alt={isKo ? '속독 기법 시각화' : 'Speed Reading Visualization'} className="guide-section-illustration" />
+
                 <h3>{isKo ? '1. 서브보컬라이제이션 줄이기' : '1. Reducing Subvocalization'}</h3>
                 <p>
                   {isKo
@@ -222,6 +224,8 @@ export default function Reading(): ReactElement {
                     ? '정독(Intensive Reading)과 다독(Extensive Reading)은 독서의 두 축입니다. 정독은 한 권의 책을 깊이 있게 읽는 방법이고, 다독은 많은 책을 폭넓게 읽는 방법입니다. 두 가지를 적절히 조합하면 깊이와 폭을 동시에 갖춘 독서가 가능합니다.'
                     : 'Intensive reading and extensive reading are the two pillars of reading. Intensive reading means reading one book deeply, while extensive reading means reading many books broadly. Combining both appropriately enables reading with both depth and breadth.'}
                 </p>
+
+                <img src="/assets/images/topics/reading-intensive.svg" alt={isKo ? '정독과 다독 비교' : 'Intensive vs Extensive Reading'} className="guide-section-illustration" />
 
                 <h3>{isKo ? '정독 (Intensive Reading)' : 'Intensive Reading'}</h3>
                 <p>
@@ -341,6 +345,8 @@ export default function Reading(): ReactElement {
                     ? '독서의 가장 큰 장벽은 "읽는 방법"이 아니라 "꾸준히 읽는 것"입니다. 독서를 일시적인 이벤트가 아닌 일상의 습관으로 만들어야 진정한 성장이 가능합니다. 습관 형성의 과학적 원리를 활용하면 누구나 독서가를 꿈꿀 수 있습니다.'
                     : 'The biggest barrier to reading is not "how to read" but "reading consistently." True growth comes when reading becomes a daily habit rather than an occasional event. By applying the science of habit formation, anyone can become an avid reader.'}
                 </p>
+
+                <img src="/assets/images/topics/reading-habit.svg" alt={isKo ? '독서 습관 만들기' : 'Building Reading Habits'} className="guide-section-illustration" />
 
                 <h3>{isKo ? '1. 작게 시작하기 (2분 규칙)' : '1. Start Small (The 2-Minute Rule)'}</h3>
                 <p>

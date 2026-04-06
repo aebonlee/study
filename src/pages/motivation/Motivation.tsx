@@ -212,6 +212,7 @@ function GoalsSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '명확한 목표는 나침반과 같습니다. 어디로 가야 하는지 알 때 비로소 효율적인 경로를 선택할 수 있습니다. 모호한 목표는 동기를 약화시키고, 구체적인 목표는 행동을 촉발합니다.'
             : 'Clear goals are like a compass. Only when you know where to go can you choose the most efficient path. Vague goals weaken motivation, while specific goals trigger action.'}
         </p>
+        <img src="/assets/images/topics/motivation-goals.svg" alt={isKo ? 'SMART 목표 프레임워크' : 'SMART Goals Framework'} className="guide-section-illustration" />
       </div>
 
       <h2>{isKo ? 'SMART 목표 설정법' : 'The SMART Goal Framework'}</h2>
@@ -554,6 +555,7 @@ function FailureSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '실패는 학습 과정의 자연스러운 일부이며, 성장의 가장 강력한 촉매제입니다. 문제는 실패 자체가 아니라, 실패에 대한 우리의 반응입니다. 실패를 두려워하는 대신 활용하는 방법을 배우면, 모든 좌절이 성장의 발판이 됩니다.'
             : 'Failure is a natural part of learning and the most powerful catalyst for growth. The problem isn\'t failure itself but our reaction to it. When you learn to leverage failure instead of fearing it, every setback becomes a stepping stone.'}
         </p>
+        <img src="/assets/images/topics/motivation-failure.svg" alt={isKo ? '실패에서 배우기' : 'Learning from Failure'} className="guide-section-illustration" />
       </div>
 
       <h2>{isKo ? '실패에 대한 관점 전환' : 'Reframing Failure'}</h2>
@@ -670,6 +672,7 @@ function SustainSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '처음의 열정은 누구나 가질 수 있지만, 6개월, 1년, 3년 이상 학습을 지속하는 것은 완전히 다른 이야기입니다. 장기간 동기를 유지하려면 열정에만 의존하지 않는 체계적인 시스템이 필요합니다.'
             : 'Anyone can have initial enthusiasm, but sustaining learning for 6 months, 1 year, or 3+ years is an entirely different story. Maintaining long-term motivation requires systematic approaches that don\'t rely solely on passion.'}
         </p>
+        <img src="/assets/images/topics/motivation-sustain.svg" alt={isKo ? '1% 복리 성장 법칙' : '1% Compound Growth Rule'} className="guide-section-illustration" />
       </div>
 
       <h2>{isKo ? '습관 기반 학습 시스템' : 'Habit-Based Learning System'}</h2>

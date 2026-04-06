@@ -26,6 +26,7 @@ function PrinciplesSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '효과적인 노트 필기의 첫 번째 원칙은 모든 것을 받아적지 않는 것입니다. 강의나 회의에서 말하는 모든 단어를 기록하려 하면 오히려 핵심을 놓치게 됩니다. 능동적으로 듣고, 핵심 개념과 아이디어를 자신만의 언어로 재구성하여 기록해야 합니다. 이 과정 자체가 학습의 일부입니다.'
           : 'The first principle of effective note-taking is to avoid writing down everything verbatim. Attempting to transcribe every spoken word during a lecture or meeting causes you to miss the key points. Listen actively, then reconstruct core concepts and ideas in your own words. This process itself is part of learning.'}
       </p>
+      <img src="/assets/images/topics/note-taking-principles.svg" alt={isKo ? '능동적 필기 원칙' : 'Active Note-Taking Principles'} className="guide-section-illustration" />
 
       <h3>{isKo ? '2. 구조화된 기록' : '2. Structured Recording'}</h3>
       <p>
@@ -129,6 +130,7 @@ function MindmapSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '마인드맵은 Tony Buzan이 체계화한 시각적 사고 도구입니다. 중심 주제에서 가지를 뻗어나가며 관련 아이디어를 방사형으로 배치합니다. 이는 인간 두뇌의 연상 작용과 유사한 구조로, 선형적 노트보다 기억 유지율이 10~15% 더 높다는 연구 결과가 있습니다.'
           : 'Mind mapping is a visual thinking tool systematized by Tony Buzan. It arranges related ideas radially, branching outward from a central topic. This structure mirrors the brain\'s associative processes, and research shows 10-15% higher retention rates compared to linear notes.'}
       </p>
+      <img src="/assets/images/topics/note-taking-mindmap.svg" alt={isKo ? '마인드맵 예시' : 'Mind Map Example'} className="guide-section-illustration" />
 
       <h3>{isKo ? '마인드맵 작성 5단계' : '5 Steps to Create a Mind Map'}</h3>
       <ol>
@@ -290,6 +292,7 @@ function SystemSection({ isKo }: { isKo: boolean }): ReactElement {
           ? 'Tiago Forte가 고안한 PARA 시스템은 모든 디지털 정보를 네 가지 범주로 분류합니다. 이 시스템의 핵심은 정보를 주제별이 아니라 "활용 가능성"을 기준으로 분류한다는 것입니다. 어디에 저장했는지 기억할 필요 없이, 필요할 때 빠르게 찾을 수 있는 구조를 만듭니다.'
           : 'The PARA system, devised by Tiago Forte, classifies all digital information into four categories. The core principle is organizing information not by topic but by "actionability." It creates a structure where you can quickly find what you need without remembering where you stored it.'}
       </p>
+      <img src="/assets/images/topics/note-taking-system.svg" alt={isKo ? 'PARA 정리 시스템' : 'PARA Organization System'} className="guide-section-illustration" />
       <ol>
         <li>
           <strong>Projects ({isKo ? '프로젝트' : 'Projects'})</strong>
