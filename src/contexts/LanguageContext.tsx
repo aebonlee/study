@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, type ReactElement } from 'react';
-import { translations } from '../utils/translations';
+import translations from '../utils/translations';
 import type { Language } from '../types';
 
 interface LanguageContextValue {

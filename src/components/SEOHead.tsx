@@ -1,5 +1,5 @@
 import { useLanguage } from '../contexts/LanguageContext';
-import site from '../config/site';
+import { SITE_CONFIG as site } from '../config/site';
 import type { ReactElement } from 'react';
 
 interface SEOHeadProps {

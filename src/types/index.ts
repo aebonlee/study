@@ -1,6 +1,33 @@
 /* ───────────────────────────────────────────
- *  Domain types for study
+ *  Domain types for DreamIT Study
  * ─────────────────────────────────────────── */
+
+// ─── Language ───
+export type Language = 'ko' | 'en';
+
+// ─── Theme ───
+export type ThemeMode = 'auto' | 'light' | 'dark';
+export type ColorTheme = 'study' | 'wisdom' | 'ocean' | 'sunset' | 'cherry';
+
+// ─── Learning Path ───
+export interface LearningPath {
+  id: string;
+  icon: string;
+  nameKo: string;
+  nameEn: string;
+  descKo: string;
+  descEn: string;
+  color: string;
+  path: string;
+  topics: string[];
+}
+
+export interface Section {
+  id: string;
+  icon: string;
+  ko: string;
+  en: string;
+}
 
 // ─── Product ───
 export interface Product {
@@ -157,103 +184,6 @@ export interface SearchResults {
   gallery: SearchResultItem[];
 }
 
-// ─── Site Config ───
-export interface BrandPart {
-  text: string;
-  className: string;
-}
-
-export interface MenuItem {
-  path: string;
-  labelKey: string;
-  activePath?: string;
-  dropdown?: SubMenuItem[];
-}
-
-export interface SubMenuItem {
-  path: string;
-  labelKey: string;
-}
-
-export interface FamilySite {
-  name: string;
-  url: string;
-}
-
-export interface ColorOption {
-  name: ColorTheme;
-  color: string;
-}
-
-export interface CompanyInfo {
-  name: string;
-  ceo: string;
-  bizNumber: string;
-  salesNumber?: string;
-  publisherNumber?: string;
-  address: string;
-  email: string;
-  phone: string;
-  kakao?: string;
-  businessHours?: string;
-}
-
-export interface SiteFeatures {
-  shop: boolean;
-  community: boolean;
-  search: boolean;
-  auth: boolean;
-  license: boolean;
-}
-
-export interface Category {
-  id: string;
-  name: string;
-  nameEn: string;
-  icon: string;
-  path: string;
-}
-
-export interface LearningSite {
-  id: string;
-  name: string;
-  nameEn: string;
-  url: string;
-  icon: string;
-  color: string;
-  category: string;
-  description: string;
-  descriptionEn: string;
-  techStack: string[];
-  difficulty: 'beginner' | 'intermediate' | 'advanced';
-  curriculum: string[];
-  curriculumEn: string[];
-  features: string[];
-  featuresEn: string[];
-  target: string;
-  targetEn: string;
-}
-
-export interface SiteConfig {
-  id: string;
-  name: string;
-  nameKo: string;
-  description: string;
-  url: string;
-  dbPrefix: string;
-  parentSite: { name: string; url: string };
-  brand: { parts: BrandPart[] };
-  themeColor: string;
-  company: CompanyInfo;
-  features: SiteFeatures;
-  colors: ColorOption[];
-  categories: Category[];
-  learningSites: LearningSite[];
-  menuItems: MenuItem[];
-  footerLinks: { path: string; labelKey: string }[];
-  familySites: FamilySite[];
-}
-
 // ─── Payment (PortOne V1) ───
 export interface PaymentRequest {
   orderId: string;
@@ -287,10 +217,3 @@ export interface Toast {
   message: string;
   type: ToastType;
 }
-
-// ─── Theme ───
-export type ThemeMode = 'auto' | 'light' | 'dark';
-export type ColorTheme = 'blue' | 'red' | 'green' | 'purple' | 'orange';
-
-// ─── Language ───
-export type Language = 'ko' | 'en';

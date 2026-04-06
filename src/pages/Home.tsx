@@ -1,128 +1,155 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
+import { LEARNING_PATHS } from '../config/site';
 import SEOHead from '../components/SEOHead';
-import useCountUp from '../hooks/useCountUp';
-import useAOS from '../hooks/useAOS';
-import site from '../config/site';
-import type { ReactElement, RefObject } from 'react';
+import HeroBackground from '../components/HeroBackground';
+import HeroCarousel from '../components/HeroCarousel';
+import FeatureCard from '../components/FeatureCard';
+import type { ReactElement } from 'react';
 
-const CATEGORY_DESC_KEYS: Record<string, string> = {
-  'fundamentals': 'site.home.categoryFundamentalsDesc',
-  'strategy': 'site.home.categoryStrategyDesc',
-  'management': 'site.home.categoryManagementDesc',
-};
+export default function Home(): ReactElement {
+  const { language, t } = useLanguage();
+  const isKo = language === 'ko';
 
-const Home = (): ReactElement => {
-  const { t, language } = useLanguage();
-  useAOS();
-
-  const statTopics = useCountUp(8, 1500);
-  const statStudents = useCountUp(500, 2000);
-  const statCategories = useCountUp(3, 1500);
-  const statSatisfaction = useCountUp(95, 2000);
+  const carouselSlides = [
+    {
+      title: isKo ? '학습 습관부터 시험 전략까지' : 'From Study Habits to Exam Strategy',
+      description: isKo
+        ? '효과적인 학습 습관 형성, 기억력 향상, 집중력 강화까지 — 공부 잘하는 방법의 모든 것을 체계적으로 배웁니다.'
+        : 'From building effective study habits to memory enhancement and focus — learn everything about studying effectively.',
+    },
+    {
+      title: isKo ? '과학적으로 검증된 학습법' : 'Scientifically Proven Study Methods',
+      description: isKo
+        ? '인지과학과 교육심리학에 기반한 학습 전략으로 더 적은 시간에 더 많이 배우세요.'
+        : 'Learn more in less time with strategies based on cognitive science and educational psychology.',
+    },
+    {
+      title: isKo ? '시간 관리와 동기부여' : 'Time Management & Motivation',
+      description: isKo
+        ? '효율적인 시간 관리와 지속 가능한 동기부여 전략으로 장기적인 학습 성과를 달성하세요.'
+        : 'Achieve long-term learning outcomes with efficient time management and sustainable motivation strategies.',
+    },
+  ];
 
   return (
     <>
-      <SEOHead title={t('site.home.title')} description={site.description} />
+      <SEOHead path="/" />
 
+      {/* Hero */}
       <section className="hero">
-        <div className="hero-bg-effect">
-          <div className="particles">
-            {Array.from({ length: 14 }, (_, i) => (
-              <div key={i} className="particle" style={{
-                left: `${5 + Math.random() * 90}%`,
-                top: `${5 + Math.random() * 90}%`,
-                '--duration': `${20 + Math.random() * 15}s`,
-                animationDelay: `${Math.random() * 10}s`,
-                width: `${4 + Math.random() * 5}px`,
-                height: `${4 + Math.random() * 5}px`,
-              } as React.CSSProperties} />
+        <HeroBackground />
+        <div className="hero-content">
+          <div className="hero-badge">
+            <i className="fa-solid fa-graduation-cap" />
+            {t('hero.badge')}
+          </div>
+          <h1 className="hero-title">
+            {t('hero.title')}
+            <span className="hero-title-highlight">{t('hero.titleHighlight')}</span>
+          </h1>
+          <p className="hero-description">{t('hero.description')}</p>
+          <div className="hero-actions">
+            <Link to="/study-habits" className="btn btn-primary-large">{t('hero.cta')}</Link>
+            <Link to="/memory" className="btn btn-secondary" style={{ borderColor: 'rgba(255,255,255,0.3)', color: '#fff' }}>
+              {t('hero.ctaSecondary')}
+            </Link>
+          </div>
+          <HeroCarousel slides={carouselSlides} />
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="features-section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">{t('features.title')}</h2>
+            <p className="section-subtitle">{t('features.subtitle')}</p>
+          </div>
+          <div className="features-grid">
+            <FeatureCard icon="fa-book-open" title={t('features.habits.title')} description={t('features.habits.desc')} />
+            <FeatureCard icon="fa-brain" title={t('features.memory.title')} description={t('features.memory.desc')} />
+            <FeatureCard icon="fa-file-pen" title={t('features.strategy.title')} description={t('features.strategy.desc')} />
+            <FeatureCard icon="fa-scale-balanced" title={t('features.balance.title')} description={t('features.balance.desc')} />
+          </div>
+        </div>
+      </section>
+
+      {/* Learning Paths */}
+      <section className="paths-section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">{t('home.pathsTitle')}</h2>
+            <p className="section-subtitle">{t('home.pathsSubtitle')}</p>
+          </div>
+          <div className="paths-grid">
+            {LEARNING_PATHS.map(path => (
+              <Link key={path.id} to={path.path} className="path-card">
+                <div className="path-card-header">
+                  <div className="path-icon" style={{ background: path.color }}>
+                    <i className={`fa-solid ${path.icon}`} />
+                  </div>
+                  <h3 className="path-name">{isKo ? path.nameKo : path.nameEn}</h3>
+                </div>
+                <p className="path-desc">{isKo ? path.descKo : path.descEn}</p>
+                <div className="path-topics">
+                  {path.topics.map((topic, i) => (
+                    <span key={i} className="path-topic">{topic}</span>
+                  ))}
+                </div>
+              </Link>
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Stats */}
+      <section className="stats-section">
         <div className="container">
-          <div className="hero-content">
-            <h1 className="hero-title">
-              <span className="title-line">{t('site.home.title')}</span>
-              <span className="title-line">
-                <span className="highlight">{t('site.home.subtitle')}</span>
-              </span>
-            </h1>
-            <p className="hero-description">{t('site.home.heroDesc')}</p>
-            <div className="hero-buttons">
-              <Link to="/courses" className="btn btn-primary">{t('site.home.ctaStart')}</Link>
-              <Link to="/about" className="btn btn-secondary">{t('site.home.ctaAbout')}</Link>
+          <div className="stats-grid">
+            <div className="stat-item">
+              <div className="stat-number">8+</div>
+              <div className="stat-label">{t('stats.guides')}</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">50+</div>
+              <div className="stat-label">{t('stats.topics')}</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">8</div>
+              <div className="stat-label">{t('stats.categories')}</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="edu-stats-section">
-        <div className="container">
-          <h2 className="section-title text-center">{t('site.home.statsTitle')}</h2>
-          <div className="edu-stats-grid">
-            <div className="edu-stats-card" ref={statTopics.ref as RefObject<HTMLDivElement>}>
-              <span className="edu-stats-number">{statTopics.count}</span>
-              <span className="edu-stats-suffix">+</span>
-              <p className="edu-stats-label">{t('site.home.statTopics')}</p>
-            </div>
-            <div className="edu-stats-card" ref={statStudents.ref as RefObject<HTMLDivElement>}>
-              <span className="edu-stats-number">{statStudents.count}</span>
-              <span className="edu-stats-suffix">+</span>
-              <p className="edu-stats-label">{t('site.home.statStudents')}</p>
-            </div>
-            <div className="edu-stats-card" ref={statCategories.ref as RefObject<HTMLDivElement>}>
-              <span className="edu-stats-number">{statCategories.count}</span>
-              <span className="edu-stats-suffix"></span>
-              <p className="edu-stats-label">{t('site.home.statCategories')}</p>
-            </div>
-            <div className="edu-stats-card" ref={statSatisfaction.ref as RefObject<HTMLDivElement>}>
-              <span className="edu-stats-number">{statSatisfaction.count}</span>
-              <span className="edu-stats-suffix">%</span>
-              <p className="edu-stats-label">{t('site.home.statSatisfaction')}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="edu-sites-section">
+      {/* Workflow */}
+      <section className="workflow-section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">{t('site.home.categoriesTitle')}</h2>
-            <p className="section-subtitle">{t('site.home.categoriesSubtitle')}</p>
+            <h2 className="section-title">{t('home.workflowTitle')}</h2>
+            <p className="section-subtitle">{t('home.workflowSubtitle')}</p>
           </div>
-          <div className="edu-category-grid">
-            {site.categories.map((cat, idx) => {
-              const topicsInCat = site.learningSites.filter((s) => s.category === cat.id);
-              return (
-                <div key={cat.id} className="edu-category-card" data-aos="fade-up" data-aos-delay={idx * 100}>
-                  <div className="edu-category-card-icon"><i className={cat.icon}></i></div>
-                  <h3>{language === 'en' ? cat.nameEn : cat.name}</h3>
-                  <span className="edu-category-count">
-                    {topicsInCat.length}{t('site.home.categoryTopicsCount')}
-                  </span>
-                  <p className="edu-category-desc">{t(CATEGORY_DESC_KEYS[cat.id])}</p>
-                  <Link to={cat.path} className="btn btn-secondary edu-category-btn">
-                    {t('site.home.categoryViewAll')} →
-                  </Link>
-                </div>
-              );
-            })}
+          <div className="workflow-grid">
+            {[1, 2, 3, 4].map(n => (
+              <div key={n} className="workflow-step">
+                <div className="workflow-number">{n}</div>
+                <h3 className="workflow-title">{t(`home.step${n}`)}</h3>
+                <p className="workflow-desc">{t(`home.step${n}desc`)}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="cta-section" data-aos="fade-up">
+      {/* CTA */}
+      <section className="cta-section">
         <div className="container">
-          <div className="cta-content text-center">
-            <h2>{t('site.home.ctaBottomTitle')}</h2>
-            <p>{t('site.home.ctaBottomDesc')}</p>
-            <Link to="/courses" className="btn btn-primary-large">{t('site.home.ctaBottomBtn')}</Link>
-          </div>
+          <h2 className="cta-title">{t('cta.title')}</h2>
+          <p className="cta-description">{t('cta.description')}</p>
+          <Link to="/study-habits" className="btn btn-primary-large">{t('cta.button')}</Link>
         </div>
       </section>
     </>
   );
-};
-
-export default Home;
+}

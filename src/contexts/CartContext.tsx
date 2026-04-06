@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect, useCallback, type ReactElement } from 'react';
 import type { CartItem, Product } from '../types';
-import site from '../config/site';
+import { SITE_CONFIG as site } from '../config/site';
 
 interface CartContextValue {
   cartItems: CartItem[];

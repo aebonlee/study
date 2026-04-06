@@ -1,109 +1,91 @@
-import { createContext, useContext, useState, useEffect, type ReactElement } from 'react';
-import type { ThemeMode, ColorTheme } from '../types';
+import { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import type { ReactElement, ReactNode } from 'react';
 
 interface ThemeContextValue {
-  theme: 'light' | 'dark';
-  mode: ThemeMode;
+  mode: string;
+  resolvedTheme: string;
   toggleTheme: () => void;
-  colorTheme: ColorTheme;
-  setColorTheme: (c: ColorTheme) => void;
+  colorTheme: string;
+  setColorTheme: (color: string) => void;
+  COLOR_OPTIONS: { name: string; color: string }[];
 }
 
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
-const getTimeBasedTheme = (): 'light' | 'dark' => {
-  const hour = new Date().getHours();
-  return (hour >= 6 && hour < 18) ? 'light' : 'dark';
-};
+const COLOR_OPTIONS = [
+  { name: 'study', color: '#059669' },
+  { name: 'wisdom', color: '#8B5CF6' },
+  { name: 'ocean', color: '#2563EB' },
+  { name: 'sunset', color: '#D97706' },
+  { name: 'cherry', color: '#E11D48' },
+];
 
-const COLOR_THEMES: ColorTheme[] = ['blue', 'red', 'green', 'purple', 'orange'];
-
-/** cookie 읽기 */
-const getCookie = (name: string): string | null => {
+function getCookie(name: string): string | null {
   const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-  return match ? decodeURIComponent(match[2]) : null;
-};
-
-/** cookie 쓰기 (1년 유지) */
-const setCookie = (name: string, value: string): void => {
-  document.cookie = `${name}=${encodeURIComponent(value)};path=/;max-age=31536000;SameSite=Lax`;
-};
-
-/** cookie 삭제 */
-const removeCookie = (name: string): void => {
-  document.cookie = `${name}=;path=/;max-age=0`;
-};
-
-interface ThemeProviderProps {
-  children: React.ReactNode;
+  return match ? match[2] : null;
 }
 
-export const ThemeProvider = ({ children }: ThemeProviderProps): ReactElement => {
-  const [mode, setMode] = useState<ThemeMode>(() => {
-    const saved = getCookie('themeMode');
-    if (saved === 'light' || saved === 'dark' || saved === 'auto') return saved;
-    return 'auto';
-  });
+function setCookie(name: string, value: string, days = 365): void {
+  const d = new Date();
+  d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
+  document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
+}
 
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    return mode === 'auto' ? getTimeBasedTheme() : (mode as 'light' | 'dark');
-  });
+function getAutoTheme(): string {
+  const hour = new Date().getHours();
+  return hour >= 6 && hour < 18 ? 'light' : 'dark';
+}
 
-  const [colorTheme, setColorTheme] = useState<ColorTheme>(() => {
-    const saved = getCookie('colorTheme');
-    return (COLOR_THEMES as string[]).includes(saved ?? '') ? (saved as ColorTheme) : 'green';
-  });
+export function ThemeProvider({ children }: { children: ReactNode }): ReactElement {
+  const [mode, setMode] = useState(() => getCookie('theme_mode') || 'auto');
+  const [colorTheme, setColorThemeState] = useState(() => getCookie('color_theme') || 'study');
 
-  // Resolve theme from mode (+ time tick for auto)
+  const resolvedTheme = mode === 'auto' ? getAutoTheme() : mode;
+
   useEffect(() => {
-    if (mode !== 'auto') {
-      setTheme(mode as 'light' | 'dark');
-      return;
+    document.documentElement.setAttribute('data-theme', resolvedTheme);
+  }, [resolvedTheme]);
+
+  useEffect(() => {
+    if (colorTheme === 'study') {
+      document.documentElement.removeAttribute('data-color');
+    } else {
+      document.documentElement.setAttribute('data-color', colorTheme);
     }
-    setTheme(getTimeBasedTheme());
+  }, [colorTheme]);
+
+  // Auto theme tick
+  useEffect(() => {
+    if (mode !== 'auto') return;
     const interval = setInterval(() => {
-      setTheme(getTimeBasedTheme());
+      const newTheme = getAutoTheme();
+      document.documentElement.setAttribute('data-theme', newTheme);
     }, 60000);
     return () => clearInterval(interval);
   }, [mode]);
 
-  // Apply dark/light to DOM
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
-
-  // Apply color theme to DOM
-  useEffect(() => {
-    document.documentElement.setAttribute('data-color', colorTheme);
-    setCookie('colorTheme', colorTheme);
-  }, [colorTheme]);
-
-  // Persist mode
-  useEffect(() => {
-    setCookie('themeMode', mode);
-    removeCookie('theme'); // clean legacy
-  }, [mode]);
-
-  // Cycle: auto → light → dark → auto
-  const toggleTheme = () => {
+  const toggleTheme = useCallback(() => {
     setMode(prev => {
-      if (prev === 'auto') return 'light';
-      if (prev === 'light') return 'dark';
-      return 'auto';
+      const next = prev === 'auto' ? 'light' : prev === 'light' ? 'dark' : 'auto';
+      setCookie('theme_mode', next);
+      return next;
     });
-  };
+  }, []);
+
+  const setColorTheme = useCallback((color: string) => {
+    setColorThemeState(color);
+    setCookie('color_theme', color);
+  }, []);
 
   return (
-    <ThemeContext.Provider value={{ theme, mode, toggleTheme, colorTheme, setColorTheme }}>
+    <ThemeContext.Provider value={{ mode, resolvedTheme, toggleTheme, colorTheme, setColorTheme, COLOR_OPTIONS }}>
       {children}
     </ThemeContext.Provider>
   );
-};
+}
 
-export const useTheme = (): ThemeContextValue => {
+export function useTheme(): ThemeContextValue {
   const context = useContext(ThemeContext);
-  if (!context) {
-    throw new Error('useTheme must be used within ThemeProvider');
-  }
+  if (!context) throw new Error('useTheme must be used within ThemeProvider');
   return context;
-};
+}
