@@ -242,6 +242,7 @@ function ReviewSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '간격 반복법은 기억이 사라지기 직전에 복습하여 기억을 강화하는 과학적 학습법입니다. 첫 복습은 1일 후, 두 번째는 3일 후, 세 번째는 7일 후, 네 번째는 14일 후, 다섯 번째는 30일 후에 하는 것이 일반적인 간격입니다. 이 방법은 같은 시간을 투자해도 벼락치기보다 2~3배 높은 기억 유지율을 보여줍니다.'
           : 'Spaced repetition is a scientifically-backed learning method that reinforces memory by reviewing just before forgetting occurs. The typical intervals are: 1st review after 1 day, 2nd after 3 days, 3rd after 7 days, 4th after 14 days, and 5th after 30 days. This method shows 2-3x higher retention rates compared to cramming with the same time investment.'}
       </p>
+      <img src="/assets/images/topics/note-taking-review.svg" alt={isKo ? '간격 반복 복습 노트' : 'Spaced Repetition Review Notes'} className="guide-section-illustration" />
 
       <h3>{isKo ? '복습 노트 작성 원칙' : 'Review Note Writing Principles'}</h3>
       <ol>

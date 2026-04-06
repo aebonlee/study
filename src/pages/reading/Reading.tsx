@@ -409,6 +409,7 @@ export default function Reading(): ReactElement {
                     ? '독서 노트는 읽은 내용을 자신의 지식으로 변환하는 가장 효과적인 도구입니다. 단순히 내용을 베끼는 것이 아니라, 핵심을 추출하고, 자신의 생각을 덧붙이고, 다른 지식과 연결하는 능동적인 과정입니다. 체계적인 독서 노트는 수년 후에도 책의 핵심을 빠르게 떠올릴 수 있게 해줍니다.'
                     : 'Reading notes are the most effective tool for converting what you read into personal knowledge. It is not simply copying content but an active process of extracting key points, adding your own thoughts, and connecting to other knowledge. Systematic reading notes allow you to quickly recall the essence of books even years later.'}
                 </p>
+                <img src="/assets/images/topics/reading-notes.svg" alt={isKo ? '독서 노트 작성법' : 'Reading Note Methods'} className="guide-section-illustration" />
 
                 <h3>{isKo ? '1. 코넬 노트법 (Cornell Method)' : '1. Cornell Note-Taking Method'}</h3>
                 <p>

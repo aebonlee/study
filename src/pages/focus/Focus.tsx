@@ -240,6 +240,7 @@ function MultitaskSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '많은 사람들이 멀티태스킹 능력을 자랑스럽게 여기지만, 신경과학 연구 결과는 정반대를 말합니다. 스탠퍼드 대학교의 연구에 따르면, 습관적 멀티태스커는 단일 작업자보다 주의력 전환, 기억 조직화, 불필요한 정보 필터링 모두에서 낮은 성과를 보였습니다. 인간의 뇌는 진정한 병렬 처리가 불가능하며, 우리가 멀티태스킹이라고 느끼는 것은 실제로는 "태스크 스위칭"입니다.'
           : 'Many people take pride in their multitasking ability, but neuroscience research tells the opposite story. Stanford University research showed that habitual multitaskers performed worse than single-taskers in attention switching, memory organization, and filtering irrelevant information. The human brain cannot truly process in parallel — what we perceive as multitasking is actually "task switching."'}
       </p>
+      <img src="/assets/images/topics/focus-multitask.svg" alt={isKo ? '싱글태스킹 vs 멀티태스킹' : 'Single-Tasking vs Multi-Tasking'} className="guide-section-illustration" />
 
       <h3>{isKo ? '전환 비용 (Switching Cost)' : 'Switching Cost'}</h3>
       <p>

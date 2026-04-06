@@ -324,6 +324,7 @@ export default function ExamStrategy(): ReactElement {
                     ? '서술형 답안은 단순 암기가 아닌 이해와 표현력을 평가합니다. 같은 내용을 알고 있어도 어떻게 구성하고 표현하느냐에 따라 점수가 크게 달라집니다. 논리적 구조, 핵심 키워드 사용, 명확한 표현이 서술형 고득점의 세 가지 핵심 요소입니다.'
                     : 'Essay answers evaluate understanding and expression rather than simple memorization. Even with the same knowledge, scores vary greatly depending on how you structure and express it. Logical structure, use of key terms, and clear expression are the three core elements for high essay scores.'}
                 </p>
+                <img src="/assets/images/topics/exam-essay.svg" alt={isKo ? '서술형 답안 구조' : 'Essay Answer Structure'} className="guide-section-illustration" />
 
                 <h3>{isKo ? '1. 개요 먼저 작성하기 (Outlining)' : '1. Write an Outline First'}</h3>
                 <p>
