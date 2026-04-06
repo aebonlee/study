@@ -128,6 +128,7 @@ function IntroSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '인간의 기억 시스템이 어떻게 작동하는지, 그리고 이를 학습에 어떻게 활용할 수 있는지 알아봅니다.'
             : 'Explore how the human memory system works and how to leverage it for learning.'}
         </p>
+        <img src="/assets/images/topics/memory-hero.svg" alt={isKo ? '기억력 향상 일러스트' : 'Memory Enhancement Illustration'} className="guide-hero-illustration" />
       </div>
 
       <h2>{isKo ? '기억의 세 가지 단계' : 'Three Stages of Memory'}</h2>
@@ -205,6 +206,8 @@ function SpacedSection({ isKo }: { isKo: boolean }): ReactElement {
             : 'Learn the principles and practice of spaced repetition, the most scientifically validated method for long-term memory retention.'}
         </p>
       </div>
+
+      <img src="/assets/images/topics/memory-spaced.svg" alt={isKo ? '에빙하우스 망각 곡선' : 'Ebbinghaus Forgetting Curve'} className="guide-section-illustration" />
 
       <h2>{isKo ? '간격 효과(Spacing Effect)란?' : 'What Is the Spacing Effect?'}</h2>
       <p>
@@ -350,6 +353,7 @@ function MnemonicsSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '가장 강력한 기억술 중 하나로, 세계 기억력 챔피언들이 가장 많이 사용하는 기법입니다. 자신에게 익숙한 장소(집, 학교, 출근길 등)를 정신적으로 걸어가면서, 각 지점(Loci)에 기억할 항목을 배치합니다. 기억을 떠올릴 때는 같은 경로를 정신적으로 다시 걸으며 각 지점에 놓은 이미지를 회수합니다.'
           : 'One of the most powerful mnemonic techniques, used most frequently by world memory champions. You mentally walk through a familiar place (home, school, commute route) and place items to remember at specific locations (loci). To recall, you mentally walk the same route and retrieve the images placed at each location.'}
       </p>
+      <img src="/assets/images/topics/memory-palace.svg" alt={isKo ? '기억의 궁전' : 'Memory Palace'} className="guide-section-illustration" />
       <ol>
         <li>
           {isKo

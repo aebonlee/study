@@ -80,6 +80,7 @@ function CornellSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '코넬 노트법은 1950년대 코넬 대학교의 Walter Pauk 교수가 개발한 체계적인 노트 필기 방법입니다. 노트 한 페이지를 세 개의 영역으로 나누어 기록, 복습, 요약을 하나의 시스템으로 통합합니다. 전 세계 수많은 학생들이 사용하는 검증된 학습 방법론입니다.'
           : 'The Cornell Note Method is a systematic note-taking approach developed in the 1950s by Professor Walter Pauk at Cornell University. It divides a single page into three areas, integrating recording, review, and summary into one system. It is a proven learning methodology used by countless students worldwide.'}
       </p>
+      <img src="/assets/images/topics/note-taking-cornell.svg" alt={isKo ? '코넬 노트 레이아웃' : 'Cornell Note Layout'} className="guide-section-illustration" />
 
       <h3>{isKo ? '페이지 구성 (3분할 레이아웃)' : 'Page Layout (3-Section Division)'}</h3>
       <ol>
@@ -183,6 +184,7 @@ function DigitalSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '디지털 노트는 검색 가능성, 편집 용이성, 멀티미디어 통합, 클라우드 동기화 등 손글씨 노트에 없는 강력한 장점을 제공합니다. 그러나 연구에 따르면 손으로 직접 쓸 때 인지적 처리가 더 깊게 일어납니다. 따라서 상황에 맞게 디지털과 아날로그를 적절히 혼합하는 전략이 가장 효과적입니다.'
           : 'Digital notes offer powerful advantages absent in handwritten notes: searchability, ease of editing, multimedia integration, and cloud sync. However, research shows deeper cognitive processing occurs when writing by hand. Therefore, strategically mixing digital and analog methods based on the situation is most effective.'}
       </p>
+      <img src="/assets/images/topics/note-taking-digital.svg" alt={isKo ? '디지털 노트 도구' : 'Digital Note-Taking Tools'} className="guide-section-illustration" />
 
       <h3>{isKo ? '추천 디지털 노트 도구' : 'Recommended Digital Note Tools'}</h3>
       <ul>
@@ -407,6 +409,7 @@ export default function NoteTaking(): ReactElement {
                   ? '효과적인 학습의 핵심은 좋은 노트 필기에서 시작됩니다. 기본 원칙부터 코넬 노트법, 마인드맵, 디지털 도구 활용, 복습 전략, 그리고 체계적인 정리 시스템까지 실전에서 바로 활용할 수 있는 노트 필기 기법을 학습합니다.'
                   : 'Effective learning starts with good note-taking. From basic principles to the Cornell method, mind mapping, digital tools, review strategies, and systematic organization, learn note-taking techniques you can apply immediately.'}
               </p>
+              <img src="/assets/images/topics/note-taking-hero.svg" alt={isKo ? '노트 필기 전략 일러스트' : 'Note-Taking Strategies Illustration'} className="guide-hero-illustration" />
             </div>
 
             {/* ────────── Section Rendering ────────── */}

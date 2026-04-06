@@ -128,6 +128,7 @@ function IntroSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '왜 학습 습관이 중요하며, 뇌과학은 습관 형성에 대해 무엇을 말해주는지 알아봅니다.'
             : 'Explore why study habits matter and what neuroscience tells us about habit formation.'}
         </p>
+        <img src="/assets/images/topics/study-habits-hero.svg" alt={isKo ? '학습 습관 일러스트' : 'Study Habits Illustration'} className="guide-hero-illustration" />
       </div>
 
       <h2>{isKo ? '습관이란 무엇인가?' : 'What Are Habits?'}</h2>
@@ -214,6 +215,7 @@ function RoutineSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '연구에 따르면, 인간의 집중력은 평균 25~50분 간격으로 최적의 효율을 보입니다. 이를 활용한 대표적인 시간 관리 기법이 포모도로 기법(Pomodoro Technique)입니다. 25분 집중 + 5분 휴식을 1세트로, 4세트 후 15~30분 긴 휴식을 취합니다.'
           : 'Research shows that human concentration operates at optimal efficiency in intervals of 25-50 minutes. The Pomodoro Technique is a well-known time management method based on this principle: 25 minutes of focus + 5 minutes of rest as one set, followed by a 15-30 minute long break after 4 sets.'}
       </p>
+      <img src="/assets/images/topics/study-habits-routine.svg" alt={isKo ? '학습 루틴 다이어그램' : 'Study Routine Diagram'} className="guide-section-illustration" />
 
       <h3>{isKo ? '시간대별 최적 학습 전략' : 'Optimal Study Strategies by Time of Day'}</h3>
       <ul>
@@ -299,6 +301,8 @@ function EnvironmentSection({ isKo }: { isKo: boolean }): ReactElement {
             : 'Learn how to optimize your physical and digital environment to maximize focus and learning efficiency.'}
         </p>
       </div>
+
+      <img src="/assets/images/topics/study-habits-environment.svg" alt={isKo ? '최적 학습 환경' : 'Optimal Study Environment'} className="guide-section-illustration" />
 
       <h2>{isKo ? '물리적 환경 최적화' : 'Optimizing Your Physical Environment'}</h2>
 

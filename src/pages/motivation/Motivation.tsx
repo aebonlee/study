@@ -127,6 +127,7 @@ function IntrinsicSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '동기부여에는 외적 동기(보상, 성적, 칭찬)와 내적 동기(호기심, 즐거움, 성취감)가 있습니다. 외적 동기는 빠르게 효과를 보이지만 쉽게 사라지는 반면, 내적 동기는 학습을 지속 가능하게 만드는 강력한 원동력입니다.'
             : 'Motivation comes in two forms: extrinsic (rewards, grades, praise) and intrinsic (curiosity, enjoyment, sense of accomplishment). While extrinsic motivation works quickly but fades fast, intrinsic motivation is the powerful driving force that makes learning sustainable.'}
         </p>
+        <img src="/assets/images/topics/motivation-hero.svg" alt={isKo ? '동기부여 일러스트' : 'Motivation Illustration'} className="guide-hero-illustration" />
       </div>
 
       <h2>{isKo ? '자기결정이론 (Self-Determination Theory)' : 'Self-Determination Theory'}</h2>
@@ -328,6 +329,7 @@ function GrowthSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '스탠퍼드 대학의 캐롤 드웩(Carol Dweck) 교수는 30년간의 연구를 통해 사람들의 마인드셋이 학습 성과에 결정적인 영향을 미친다는 것을 밝혀냈습니다. 능력은 타고나는 것이 아니라 노력으로 키울 수 있다는 믿음이 성장 마인드셋의 핵심입니다.'
             : 'Stanford professor Carol Dweck\'s 30 years of research revealed that mindset decisively impacts learning outcomes. The core of growth mindset is believing that abilities are not innate but can be developed through effort.'}
         </p>
+        <img src="/assets/images/topics/motivation-growth.svg" alt={isKo ? '고정 vs 성장 마인드셋' : 'Fixed vs Growth Mindset'} className="guide-section-illustration" />
       </div>
 
       <h2>{isKo ? '고정 마인드셋 vs 성장 마인드셋' : 'Fixed Mindset vs Growth Mindset'}</h2>
@@ -445,6 +447,7 @@ function BurnoutSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '번아웃(Burnout)은 장기간의 과도한 스트레스로 인해 신체적, 정신적, 감정적으로 완전히 지쳐버린 상태입니다. 열심히 공부하는 학습자일수록 번아웃의 위험이 높습니다. 예방이 최선이지만, 번아웃이 왔을 때의 회복 전략도 반드시 알아두어야 합니다.'
             : 'Burnout is a state of complete physical, mental, and emotional exhaustion caused by prolonged excessive stress. Diligent learners are at higher risk. Prevention is best, but recovery strategies are essential knowledge for when burnout strikes.'}
         </p>
+        <img src="/assets/images/topics/motivation-burnout.svg" alt={isKo ? '번아웃 예방' : 'Burnout Prevention'} className="guide-section-illustration" />
       </div>
 
       <h2>{isKo ? '번아웃의 5단계' : 'The 5 Stages of Burnout'}</h2>

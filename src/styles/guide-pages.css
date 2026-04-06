@@ -172,6 +172,29 @@
     cursor: not-allowed;
 }
 
+/* ── Illustrations ── */
+.guide-hero-illustration {
+    width: 100%;
+    max-width: 680px;
+    margin: 24px auto 8px;
+    display: block;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+.guide-section-illustration {
+    width: 100%;
+    max-width: 560px;
+    margin: 20px auto 24px;
+    display: block;
+    border-radius: var(--radius-md);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+html[data-theme="dark"] .guide-hero-illustration,
+html[data-theme="dark"] .guide-section-illustration {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    filter: brightness(0.9) contrast(1.05);
+}
+
 /* ── Comparison Table ── */
 .comparison-table-wrapper {
     overflow-x: auto;

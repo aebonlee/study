@@ -74,6 +74,7 @@ function PomodoroSection({ isKo }: { isKo: boolean }): ReactElement {
           ? '뽀모도로 기법은 1980년대 이탈리아의 대학생 Francesco Cirillo가 개발했습니다. 토마토 모양의 주방 타이머(이탈리아어로 pomodoro)를 사용한 것에서 이름이 유래했습니다. 이 기법은 단순하지만 놀라울 만큼 효과적이며, 시간 관리와 집중력 향상의 핵심 도구로 전 세계적으로 사용되고 있습니다.'
           : 'The Pomodoro Technique was developed in the 1980s by Italian university student Francesco Cirillo. The name comes from the tomato-shaped kitchen timer (pomodoro in Italian) he used. This technique is simple yet remarkably effective, used worldwide as a core tool for time management and focus improvement.'}
       </p>
+      <img src="/assets/images/topics/focus-pomodoro.svg" alt={isKo ? '뽀모도로 타이머' : 'Pomodoro Timer'} className="guide-section-illustration" />
 
       <h3>{isKo ? '기본 실행 방법' : 'Basic Implementation'}</h3>
       <ol>
@@ -130,6 +131,7 @@ function DeepworkSection({ isKo }: { isKo: boolean }): ReactElement {
           ? 'Cal Newport 교수가 정립한 딥워크(Deep Work)는 "인지적으로 고도의 집중이 필요한 전문적 활동을 방해 없는 상태에서 수행하는 것"으로 정의됩니다. 이는 새로운 가치를 창출하고, 능력을 향상시키며, 쉽게 복제할 수 없는 성과를 만들어냅니다. 반대로 셸로우 워크(Shallow Work)는 인지적 부담이 적은 반복적, 사무적 업무를 말합니다.'
           : 'Deep Work, as defined by Professor Cal Newport, is "performing professional activities requiring high cognitive concentration in a distraction-free state." It creates new value, improves skills, and produces results that are hard to replicate. In contrast, Shallow Work refers to repetitive, administrative tasks with low cognitive demand.'}
       </p>
+      <img src="/assets/images/topics/focus-deepwork.svg" alt={isKo ? '딥워크 vs 샬로우워크' : 'Deep Work vs Shallow Work'} className="guide-section-illustration" />
 
       <h3>{isKo ? '딥워크 실천 전략 4가지' : 'Four Deep Work Implementation Strategies'}</h3>
       <ol>
@@ -416,6 +418,7 @@ export default function Focus(): ReactElement {
                   ? '현대인의 가장 희소한 자원은 집중력입니다. 집중력의 과학적 이해부터 뽀모도로 기법, 딥워크 전략, 방해 요소 관리, 멀티태스킹의 진실, 그리고 최고의 성과를 이끌어내는 몰입 상태까지 체계적으로 학습합니다.'
                   : 'Focus is the scarcest resource for modern people. Learn systematically from the science of focus, the Pomodoro technique, deep work strategies, distraction management, the truth about multitasking, to achieving the flow state that drives peak performance.'}
               </p>
+              <img src="/assets/images/topics/focus-hero.svg" alt={isKo ? '집중력 강화 일러스트' : 'Focus Enhancement Illustration'} className="guide-hero-illustration" />
             </div>
 
             {/* ────────── Section Rendering ────────── */}

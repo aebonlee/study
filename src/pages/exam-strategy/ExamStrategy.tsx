@@ -76,6 +76,7 @@ export default function ExamStrategy(): ReactElement {
                   ? '시험은 단순한 암기력 테스트가 아닙니다. 전략적으로 준비하면 같은 시간을 투자해도 훨씬 높은 성과를 얻을 수 있습니다. 시험 계획 수립부터 기출문제 분석, 불안 관리, 문제 유형별 전략, D-day 대비까지 체계적으로 학습합니다.'
                   : 'Exams are not simply memory tests. Strategic preparation yields much higher results with the same time investment. Learn systematically from exam planning and past exam analysis to anxiety management, question-type strategies, and D-day preparation.'}
               </p>
+              <img src="/assets/images/topics/exam-hero.svg" alt={isKo ? '시험 전략 일러스트' : 'Exam Strategy Illustration'} className="guide-hero-illustration" />
             </div>
 
             {/* ────────── planning ────────── */}
@@ -95,6 +96,9 @@ export default function ExamStrategy(): ReactElement {
                     ? '시험일부터 역으로 계획을 세우는 방법입니다. 먼저 시험일을 기준점으로 설정하고, 최종 복습 기간(시험 전 3~5일), 모의시험 기간, 심화 학습 기간, 기본 학습 기간을 순서대로 배치합니다. 이렇게 하면 남은 시간이 시각적으로 보이고, 각 단계에 얼마나 시간을 배분해야 하는지 명확해집니다.'
                     : 'This method plans backward from the exam date. Set the exam date as the anchor point, then arrange the final review period (3-5 days before), mock exam period, intensive study period, and basic learning period in order. This makes remaining time visually clear and shows how much time to allocate to each phase.'}
                 </p>
+
+                <img src="/assets/images/topics/exam-planning.svg" alt={isKo ? '시험 계획 타임라인' : 'Exam Planning Timeline'} className="guide-section-illustration" />
+
                 <ul>
                   <li>{isKo ? 'D-30~D-15: 전체 범위 1회독 (기본 개념 학습)' : 'D-30 to D-15: First pass through entire scope (basic concept learning)'}</li>
                   <li>{isKo ? 'D-14~D-8: 취약 부분 집중 학습 + 기출문제 풀이' : 'D-14 to D-8: Focus on weak areas + past exam practice'}</li>
@@ -197,6 +201,8 @@ export default function ExamStrategy(): ReactElement {
                     ? '시험 불안은 누구나 경험하는 자연스러운 반응입니다. 적절한 수준의 긴장감은 오히려 집중력을 높여주지만, 과도한 불안은 기억력을 저하시키고 실력 발휘를 방해합니다. 연구에 따르면 학생의 약 30~40%가 시험 불안으로 인해 실력보다 낮은 성적을 받습니다. 불안을 없애는 것이 아니라 관리하는 법을 배워야 합니다.'
                     : 'Test anxiety is a natural response everyone experiences. An appropriate level of tension actually improves focus, but excessive anxiety impairs memory and hinders performance. Research shows that about 30-40% of students receive lower scores than their ability due to test anxiety. The goal is not to eliminate anxiety but to learn to manage it.'}
                 </p>
+
+                <img src="/assets/images/topics/exam-anxiety.svg" alt={isKo ? '시험 불안 관리' : 'Test Anxiety Management'} className="guide-section-illustration" />
 
                 <h3>{isKo ? '1. 인지적 재구성 (Cognitive Reframing)' : '1. Cognitive Reframing'}</h3>
                 <p>

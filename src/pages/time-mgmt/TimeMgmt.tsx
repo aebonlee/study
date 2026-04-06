@@ -127,6 +127,7 @@ function PrinciplesSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '시간은 모든 사람에게 공평하게 주어진 자원입니다. 하루 24시간을 어떻게 활용하느냐에 따라 학습 성과와 삶의 질이 크게 달라집니다. 효과적인 시간 관리의 핵심 원칙을 알아봅시다.'
             : 'Time is the one resource given equally to everyone. How you use your 24 hours each day dramatically impacts your learning outcomes and quality of life. Let\'s explore the core principles of effective time management.'}
         </p>
+        <img src="/assets/images/topics/time-mgmt-hero.svg" alt={isKo ? '시간 관리 일러스트' : 'Time Management Illustration'} className="guide-hero-illustration" />
       </div>
 
       <h2>{isKo ? '파레토 법칙 (80/20 법칙)' : 'The Pareto Principle (80/20 Rule)'}</h2>
@@ -228,6 +229,7 @@ function PrioritySection({ isKo }: { isKo: boolean }): ReactElement {
           ? '미국 제34대 대통령 드와이트 아이젠하워가 활용한 의사결정 도구로, 모든 과제를 긴급성(Urgency)과 중요성(Importance) 두 가지 축으로 분류합니다. 이를 통해 4개의 사분면이 만들어지며, 각 사분면에 따라 다른 행동 전략을 취합니다.'
           : 'A decision-making tool used by the 34th U.S. President Dwight Eisenhower. It classifies all tasks along two axes: Urgency and Importance. This creates four quadrants, each requiring a different action strategy.'}
       </p>
+      <img src="/assets/images/topics/time-mgmt-matrix.svg" alt={isKo ? '아이젠하워 매트릭스' : 'Eisenhower Priority Matrix'} className="guide-section-illustration" />
 
       <h3>{isKo ? '4개의 사분면' : 'The Four Quadrants'}</h3>
       <ol>
@@ -645,6 +647,7 @@ function BalanceSection({ isKo }: { isKo: boolean }): ReactElement {
             ? '학습 효율은 공부 시간만으로 결정되지 않습니다. 수면, 운동, 사회적 관계, 여가 활동이 균형을 이룰 때 뇌의 인지 기능이 최적화되고, 지속 가능한 학습이 가능해집니다.'
             : 'Study efficiency is not determined by study hours alone. When sleep, exercise, social relationships, and leisure are balanced, cognitive function is optimized and sustainable learning becomes possible.'}
         </p>
+        <img src="/assets/images/topics/time-mgmt-balance.svg" alt={isKo ? '균형 잡힌 생활' : 'Balanced Lifestyle'} className="guide-section-illustration" />
       </div>
 
       <h2>{isKo ? '수면과 학습의 관계' : 'Sleep and Learning'}</h2>

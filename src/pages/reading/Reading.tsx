@@ -76,6 +76,7 @@ export default function Reading(): ReactElement {
                   ? '효과적인 독서는 단순히 글자를 빠르게 읽는 것이 아닙니다. 올바른 독서법을 통해 이해력, 기억력, 사고력을 동시에 향상시킬 수 있습니다. SQ3R 독서법부터 속독 기법, 비판적 읽기, 독서 습관 형성까지 체계적으로 학습합니다.'
                   : 'Effective reading is not simply about reading words faster. Through proper reading methods, you can simultaneously improve comprehension, memory, and critical thinking. Learn systematically from the SQ3R method to speed reading techniques, critical reading, and building reading habits.'}
               </p>
+              <img src="/assets/images/topics/reading-hero.svg" alt={isKo ? '독서법 일러스트' : 'Reading Methods Illustration'} className="guide-hero-illustration" />
             </div>
 
             {/* ────────── sq3r ────────── */}
@@ -88,6 +89,8 @@ export default function Reading(): ReactElement {
                     ? 'SQ3R은 미국의 교육심리학자 프랜시스 로빈슨(Francis P. Robinson)이 1946년에 개발한 독서법으로, 학술 텍스트를 효과적으로 읽고 이해하기 위한 5단계 전략입니다. Survey(훑어보기), Question(질문하기), Read(읽기), Recite(암송하기), Review(복습하기)의 머리글자를 따서 만든 이름입니다.'
                     : 'SQ3R is a reading method developed by American educational psychologist Francis P. Robinson in 1946. It is a five-step strategy for effectively reading and understanding academic texts. The name comes from the initials: Survey, Question, Read, Recite, and Review.'}
                 </p>
+
+                <img src="/assets/images/topics/reading-sq3r.svg" alt={isKo ? 'SQ3R 독서법 단계' : 'SQ3R Method Steps'} className="guide-section-illustration" />
 
                 <h3>{isKo ? '1단계: Survey (훑어보기)' : 'Step 1: Survey'}</h3>
                 <p>
@@ -274,6 +277,8 @@ export default function Reading(): ReactElement {
                     ? '비판적 읽기(Critical Reading)는 텍스트를 무비판적으로 수용하는 것이 아니라, 저자의 주장, 근거, 논리적 타당성을 능동적으로 평가하며 읽는 방법입니다. 정보 과잉 시대에 비판적 읽기 능력은 진짜 지식과 가짜 정보를 구별하는 핵심 역량입니다.'
                     : 'Critical reading is not passively accepting text but actively evaluating the author\'s claims, evidence, and logical validity. In an age of information overload, critical reading is a core competency for distinguishing real knowledge from misinformation.'}
                 </p>
+
+                <img src="/assets/images/topics/reading-critical.svg" alt={isKo ? '비판적 읽기 과정' : 'Critical Reading Process'} className="guide-section-illustration" />
 
                 <h3>{isKo ? '1. 저자의 목적과 관점 파악' : '1. Identifying Author\'s Purpose & Perspective'}</h3>
                 <p>
