@@ -70,14 +70,14 @@ html[data-color="red"] {
 }
 
 html[data-color="green"] {
-    --primary-blue: #00855A;
-    --primary-blue-dark: #005C3E;
-    --primary-blue-light: #4AE79A;
-    --primary-gradient: linear-gradient(135deg, #00855A 0%, #4AE79A 100%);
-    --accent-gradient: linear-gradient(135deg, #005C3E 0%, #00855A 50%, #4AE79A 100%);
-    --hero-bg: linear-gradient(135deg, #00855A 0%, #005C3E 50%, #1E4A35 100%);
-    --hero-bg-dark: linear-gradient(135deg, #0A5438 0%, #104830 50%, #163D2A 100%);
-    --highlight-gradient: linear-gradient(135deg, #93FDC5 0%, #BFFDE0 50%, #FFFFFF 100%);
+    --primary-blue: #059669;
+    --primary-blue-dark: #047857;
+    --primary-blue-light: #34D399;
+    --primary-gradient: linear-gradient(135deg, #059669 0%, #34D399 100%);
+    --accent-gradient: linear-gradient(135deg, #047857 0%, #059669 50%, #34D399 100%);
+    --hero-bg: linear-gradient(135deg, #059669 0%, #047857 50%, #065F46 100%);
+    --hero-bg-dark: linear-gradient(135deg, #065F46 0%, #064E3B 50%, #053D30 100%);
+    --highlight-gradient: linear-gradient(135deg, #6EE7B7 0%, #A7F3D0 50%, #FFFFFF 100%);
 }
 
 html[data-color="purple"] {
