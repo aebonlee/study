@@ -3,9 +3,6 @@
   <rect width="400" height="300" rx="12" fill="#F3F4F6"/>
 
   <!-- Subtle pattern -->
-  <pattern id="ms-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-    <rect x="0" y="0" width="40" height="40" fill="none" stroke="#8B5CF6" stroke-width="0.2" opacity="0.08"/>
-  </pattern>
   <rect width="400" height="300" fill="url(#ms-grid)"/>
 
   <!-- Axis -->
@@ -94,6 +91,9 @@
 
   <!-- Review arrows -->
   <defs>
+    <pattern id="ms-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="40" height="40" fill="none" stroke="#8B5CF6" stroke-width="0.2" opacity="0.08"/>
+    </pattern>
     <marker id="ms-up" markerWidth="6" markerHeight="6" refX="3" refY="6" orient="auto">
       <polygon points="0,6 3,0 6,6" fill="#7C3AED"/>
     </marker>

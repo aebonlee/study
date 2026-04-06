@@ -3,9 +3,11 @@
   <rect width="800" height="400" rx="16" fill="#F3F4F6"/>
 
   <!-- Subtle pattern -->
-  <pattern id="mh-dots" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
-    <circle cx="25" cy="25" r="1.5" fill="#8B5CF6" opacity="0.06"/>
-  </pattern>
+  <defs>
+    <pattern id="mh-dots" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="25" cy="25" r="1.5" fill="#8B5CF6" opacity="0.06"/>
+    </pattern>
+  </defs>
   <rect width="800" height="400" fill="url(#mh-dots)"/>
 
   <!-- Brain outline (stylized) -->

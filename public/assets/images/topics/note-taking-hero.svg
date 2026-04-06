@@ -3,15 +3,15 @@
     <clipPath id="notebook-clip">
       <rect x="150" y="40" width="500" height="320" rx="8"/>
     </clipPath>
+    <pattern id="dots-nt" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#E5E7EB"/>
+    </pattern>
   </defs>
 
   <!-- Background -->
   <rect width="800" height="400" rx="16" fill="#F3F4F6"/>
 
   <!-- Subtle dot pattern -->
-  <pattern id="dots-nt" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-    <circle cx="10" cy="10" r="1" fill="#E5E7EB"/>
-  </pattern>
   <rect width="800" height="400" fill="url(#dots-nt)" rx="16"/>
 
   <!-- Open notebook - left page -->

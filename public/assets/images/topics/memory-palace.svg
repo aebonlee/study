@@ -3,9 +3,11 @@
   <rect width="400" height="300" rx="12" fill="#F3F4F6"/>
 
   <!-- Subtle pattern -->
-  <pattern id="mp-pat" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse">
-    <circle cx="12.5" cy="12.5" r="1" fill="#8B5CF6" opacity="0.05"/>
-  </pattern>
+  <defs>
+    <pattern id="mp-pat" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse">
+      <circle cx="12.5" cy="12.5" r="1" fill="#8B5CF6" opacity="0.05"/>
+    </pattern>
+  </defs>
   <rect width="400" height="300" fill="url(#mp-pat)"/>
 
   <!-- House outline (cross-section) -->
