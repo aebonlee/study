@@ -1,111 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FFFBEB"/>
-      <stop offset="100%" stop-color="#FEF3C7"/>
-    </linearGradient>
-    <linearGradient id="depth" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FEF3C7" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#92400E" stop-opacity="0.2"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="300" rx="16" fill="url(#bg)"/>
+  <rect width="400" height="300" rx="16" fill="#FFFBEB"/>
 
   <!-- Title -->
-  <text x="200" y="26" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#92400E">Deep Work vs Shallow Work</text>
+  <text x="200" y="26" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#92400E">Deep Work vs Shallow Work</text>
 
   <!-- LEFT SIDE: Shallow Work -->
-  <g transform="translate(20,40)">
-    <!-- Label -->
-    <text x="80" y="15" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#B45309" opacity="0.7">Shallow Work</text>
+  <text x="100" y="55" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#B45309" opacity="0.7">Shallow Work</text>
 
-    <!-- Fragmented blocks (scattered, small) -->
-    <rect x="10" y="25" width="45" height="22" rx="4" fill="#D97706" opacity="0.15" stroke="#D97706" stroke-width="1" stroke-opacity="0.3"/>
-    <text x="32" y="39" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" fill="#B45309">Email</text>
+  <!-- Fragmented blocks -->
+  <rect x="30" y="65" width="45" height="20" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+  <text x="52" y="78" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#B45309">Email</text>
+  <rect x="80" y="65" width="40" height="20" rx="4" fill="#FEF9C3" stroke="#F59E0B" stroke-width="1"/>
+  <text x="100" y="78" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#B45309">SNS</text>
+  <rect x="125" y="65" width="50" height="20" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+  <text x="150" y="78" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#B45309">Meeting</text>
 
-    <rect x="60" y="25" width="40" height="22" rx="4" fill="#F59E0B" opacity="0.15" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.3"/>
-    <text x="80" y="39" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" fill="#B45309">SNS</text>
+  <rect x="25" y="90" width="38" height="20" rx="4" fill="#FEF9C3" stroke="#F59E0B" stroke-width="1"/>
+  <text x="44" y="103" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#B45309">Chat</text>
+  <rect x="68" y="90" width="50" height="20" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+  <text x="93" y="103" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#B45309">Admin</text>
+  <rect x="123" y="90" width="48" height="20" rx="4" fill="#FEF9C3" stroke="#F59E0B" stroke-width="1"/>
+  <text x="147" y="103" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#B45309">Browse</text>
 
-    <rect x="105" y="25" width="50" height="22" rx="4" fill="#D97706" opacity="0.15" stroke="#D97706" stroke-width="1" stroke-opacity="0.3"/>
-    <text x="130" y="39" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" fill="#B45309">Meeting</text>
+  <rect x="35" y="115" width="42" height="20" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+  <text x="56" y="128" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#B45309">Reply</text>
+  <rect x="82" y="115" width="45" height="20" rx="4" fill="#FEF9C3" stroke="#F59E0B" stroke-width="1"/>
+  <text x="104" y="128" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#B45309">Filing</text>
+  <rect x="132" y="115" width="40" height="20" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+  <text x="152" y="128" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#B45309">News</text>
 
-    <rect x="5" y="52" width="38" height="22" rx="4" fill="#F59E0B" opacity="0.15" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.3"/>
-    <text x="24" y="66" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" fill="#B45309">Chat</text>
-
-    <rect x="48" y="52" width="55" height="22" rx="4" fill="#D97706" opacity="0.15" stroke="#D97706" stroke-width="1" stroke-opacity="0.3"/>
-    <text x="75" y="66" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" fill="#B45309">Admin</text>
-
-    <rect x="108" y="52" width="48" height="22" rx="4" fill="#F59E0B" opacity="0.15" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.3"/>
-    <text x="132" y="66" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" fill="#B45309">Browse</text>
-
-    <rect x="15" y="79" width="42" height="22" rx="4" fill="#D97706" opacity="0.15" stroke="#D97706" stroke-width="1" stroke-opacity="0.3"/>
-    <text x="36" y="93" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" fill="#B45309">Reply</text>
-
-    <rect x="62" y="79" width="48" height="22" rx="4" fill="#F59E0B" opacity="0.15" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.3"/>
-    <text x="86" y="93" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" fill="#B45309">Filing</text>
-
-    <rect x="115" y="79" width="40" height="22" rx="4" fill="#D97706" opacity="0.15" stroke="#D97706" stroke-width="1" stroke-opacity="0.3"/>
-    <text x="135" y="93" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" fill="#B45309">News</text>
-
-    <!-- Zigzag arrows showing constant switching -->
-    <path d="M32 47 L80 52 L24 52 L86 52" stroke="#EF4444" stroke-width="1" fill="none" stroke-dasharray="2,2" opacity="0.4"/>
-
-    <!-- Output meter (low) -->
-    <text x="80" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#92400E">Output</text>
-    <rect x="25" y="122" width="110" height="8" rx="4" fill="#D97706" opacity="0.1"/>
-    <rect x="25" y="122" width="30" height="8" rx="4" fill="#EF4444" opacity="0.5"/>
-    <text x="140" y="130" font-family="system-ui,sans-serif" font-size="7" fill="#EF4444" font-weight="600">Low</text>
-  </g>
+  <!-- Output meter (low) -->
+  <text x="100" y="155" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="600" fill="#92400E">Output</text>
+  <rect x="45" y="160" width="110" height="8" rx="4" fill="#D97706" opacity="0.1"/>
+  <rect x="45" y="160" width="30" height="8" rx="4" fill="#EF4444" opacity="0.5"/>
+  <text x="160" y="167" font-family="sans-serif" font-size="7" fill="#EF4444" font-weight="600">Low</text>
 
   <!-- CENTER: VS -->
-  <line x1="200" y1="50" x2="200" y2="180" stroke="#D97706" stroke-width="1" stroke-dasharray="4,3" opacity="0.3"/>
+  <line x1="200" y1="50" x2="200" y2="175" stroke="#D97706" stroke-width="1" stroke-dasharray="4,3" opacity="0.3"/>
   <circle cx="200" cy="105" r="18" fill="#D97706"/>
-  <text x="200" y="110" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="800" fill="white">VS</text>
+  <text x="200" y="110" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="800" fill="white">VS</text>
 
   <!-- RIGHT SIDE: Deep Work -->
-  <g transform="translate(220,40)">
-    <!-- Label -->
-    <text x="80" y="15" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#92400E">Deep Work</text>
+  <text x="300" y="55" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#92400E">Deep Work</text>
 
-    <!-- Single large focused block -->
-    <rect x="10" y="25" width="150" height="80" rx="8" fill="url(#depth)" stroke="#D97706" stroke-width="2"/>
-    <!-- Inner glow -->
-    <rect x="15" y="30" width="140" height="70" rx="6" fill="#D97706" opacity="0.08"/>
+  <!-- Single large focused block -->
+  <rect x="230" y="65" width="150" height="75" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <rect x="235" y="70" width="140" height="65" rx="6" fill="#D97706" opacity="0.05"/>
 
-    <!-- Focus icon -->
-    <circle cx="85" cy="55" r="15" fill="#D97706" opacity="0.2"/>
-    <circle cx="85" cy="55" r="9" fill="#D97706" opacity="0.3"/>
-    <circle cx="85" cy="55" r="4" fill="#D97706" opacity="0.6"/>
+  <!-- Focus icon -->
+  <circle cx="305" cy="93" r="14" fill="#D97706" opacity="0.12"/>
+  <circle cx="305" cy="93" r="9" fill="#D97706" opacity="0.2"/>
+  <circle cx="305" cy="93" r="4" fill="#D97706" opacity="0.5"/>
 
-    <text x="85" y="82" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#92400E">Focused Deep Work</text>
-    <text x="85" y="94" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" fill="#B45309">3-4 hours uninterrupted</text>
+  <text x="305" y="120" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#92400E">Focused Deep Work</text>
+  <text x="305" y="132" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#B45309">3-4 hours uninterrupted</text>
 
-    <!-- Output meter (high) -->
-    <text x="80" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#92400E">Output</text>
-    <rect x="25" y="122" width="110" height="8" rx="4" fill="#D97706" opacity="0.1"/>
-    <rect x="25" y="122" width="100" height="8" rx="4" fill="#059669" opacity="0.6"/>
-    <text x="140" y="130" font-family="system-ui,sans-serif" font-size="7" fill="#059669" font-weight="600">High</text>
-  </g>
+  <!-- Output meter (high) -->
+  <text x="300" y="155" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="600" fill="#92400E">Output</text>
+  <rect x="245" y="160" width="110" height="8" rx="4" fill="#D97706" opacity="0.1"/>
+  <rect x="245" y="160" width="100" height="8" rx="4" fill="#059669" opacity="0.6"/>
+  <text x="360" y="167" font-family="sans-serif" font-size="7" fill="#059669" font-weight="600">High</text>
 
   <!-- Bottom comparison -->
-  <g transform="translate(20,195)">
-    <!-- Shallow summary -->
-    <rect x="0" y="0" width="170" height="75" rx="8" fill="white" stroke="#FDA4AF" stroke-width="1" opacity="0.8"/>
-    <text x="85" y="18" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#EF4444">Shallow Work Results</text>
-    <text x="85" y="33" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5" fill="#78716C">- Constant task switching</text>
-    <text x="85" y="46" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5" fill="#78716C">- 40% productivity loss</text>
-    <text x="85" y="59" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5" fill="#78716C">- Easily replaceable work</text>
-    <text x="85" y="72" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5" fill="#78716C">- 23 min recovery per interrupt</text>
+  <rect x="20" y="190" width="170" height="80" rx="8" fill="white" stroke="#FCA5A5" stroke-width="1"/>
+  <text x="105" y="208" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#EF4444">Shallow Work Results</text>
+  <text x="105" y="223" text-anchor="middle" font-family="sans-serif" font-size="7.5" fill="#78716C">- Constant task switching</text>
+  <text x="105" y="236" text-anchor="middle" font-family="sans-serif" font-size="7.5" fill="#78716C">- 40% productivity loss</text>
+  <text x="105" y="249" text-anchor="middle" font-family="sans-serif" font-size="7.5" fill="#78716C">- Easily replaceable work</text>
+  <text x="105" y="262" text-anchor="middle" font-family="sans-serif" font-size="7.5" fill="#78716C">- 23 min recovery per interrupt</text>
 
-    <!-- Deep summary -->
-    <rect x="190" y="0" width="170" height="75" rx="8" fill="white" stroke="#6EE7B7" stroke-width="1" opacity="0.8"/>
-    <text x="275" y="18" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#059669">Deep Work Results</text>
-    <text x="275" y="33" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5" fill="#78716C">- Sustained concentration</text>
-    <text x="275" y="46" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5" fill="#78716C">- Peak quality output</text>
-    <text x="275" y="59" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5" fill="#78716C">- Rapid skill development</text>
-    <text x="275" y="72" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5" fill="#78716C">- Hard-to-replicate value</text>
-  </g>
+  <rect x="210" y="190" width="170" height="80" rx="8" fill="white" stroke="#6EE7B7" stroke-width="1"/>
+  <text x="295" y="208" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#059669">Deep Work Results</text>
+  <text x="295" y="223" text-anchor="middle" font-family="sans-serif" font-size="7.5" fill="#78716C">- Sustained concentration</text>
+  <text x="295" y="236" text-anchor="middle" font-family="sans-serif" font-size="7.5" fill="#78716C">- Peak quality output</text>
+  <text x="295" y="249" text-anchor="middle" font-family="sans-serif" font-size="7.5" fill="#78716C">- Rapid skill development</text>
+  <text x="295" y="262" text-anchor="middle" font-family="sans-serif" font-size="7.5" fill="#78716C">- Hard-to-replicate value</text>
 
   <!-- Bottom label -->
-  <text x="200" y="290" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#92400E" opacity="0.6">Quality over Quantity</text>
+  <text x="200" y="290" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#92400E" opacity="0.6">Quality over Quantity</text>
 </svg>
