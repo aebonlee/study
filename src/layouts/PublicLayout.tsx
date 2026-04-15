@@ -2,6 +2,7 @@ import { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
+import AdminGuard from '../components/AdminGuard';
 import type { ReactElement } from 'react';
 
 const Home = lazy(() => import('../pages/Home'));
@@ -20,6 +21,7 @@ const ExamStrategy = lazy(() => import('../pages/exam-strategy/ExamStrategy'));
 const TimeMgmt = lazy(() => import('../pages/time-mgmt/TimeMgmt'));
 const Motivation = lazy(() => import('../pages/motivation/Motivation'));
 
+const AdminDashboard = lazy(() => import('../pages/admin/AdminDashboard'));
 const NotFound = lazy(() => import('../pages/NotFound'));
 
 function LoadingFallback(): ReactElement {
@@ -53,6 +55,7 @@ export default function PublicLayout(): ReactElement {
             <Route path="/time-mgmt" element={<TimeMgmt />} />
             <Route path="/motivation" element={<Motivation />} />
 
+            <Route path="/admin" element={<AdminGuard><AdminDashboard /></AdminGuard>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
